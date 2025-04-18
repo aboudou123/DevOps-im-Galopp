@@ -1,0 +1,79 @@
+
+
+## 🧠 **Lernprogramm: DevOps von A bis Z**
+
+### 📅 **Dauer:** 4–6 Monate (je nach Tempo, 5–10 Std./Woche)
+
+---
+
+### **🔹 Phase 1: Grundlagen verstehen (2–3 Wochen)**  
+**Ziele:** Verständnis für die Philosophie, Prinzipien & den Lebenszyklus von DevOps
+
+- **Was ist DevOps?**  
+  - Prinzipien: *Collaboration, Automation, CI/CD, Monitoring*
+  - Agile vs. DevOps  
+  - DevOps Lifecycle: Plan → Develop → Build → Test → Release → Deploy → Operate → Monitor
+- **Lernressourcen:**  
+  - [The DevOps Handbook](https://itrevolution.com/the-devops-handbook/)
+  - „What is DevOps?“ – YouTube-Videos / LinkedIn Learning / FreeCodeCamp
+
+---
+
+### **🔹 Phase 2: Tools & Technologien kennenlernen (4–6 Wochen)**  
+**Ziele:** Die wichtigsten Werkzeuge für jede Phase der Pipeline beherrschen
+
+| Phase     | Tools                        | Was du lernen solltest                          |
+|-----------|------------------------------|-------------------------------------------------|
+| **Plan**  | Jira, Trello, GitHub Issues  | Agile Methoden (Scrum, Kanban), Ticketsysteme   |
+| **Code**  | Git, GitHub, GitLab          | Branching, Pull Requests, Code Review           |
+| **Build** | Maven, Gradle, npm           | Build-Automatisierung, Dependency Management    |
+| **Test**  | JUnit, Selenium, Postman     | Unit, Integration, E2E-Tests, API-Tests         |
+| **CI/CD** | Jenkins, GitHub Actions, GitLab CI | CI/CD Pipelines erstellen                  |
+| **Deploy**| Docker, Kubernetes, Helm     | Containerisierung, Orchestrierung               |
+| **Operate** | Prometheus, Grafana, ELK   | Logging, Monitoring, Alerting                   |
+| **Cloud** | AWS / Azure / GCP            | Basics zu Cloud Deployment                      |
+
+> 🧩 Tipp: Wähle pro Kategorie *ein* Tool zum Tiefgehen (z. B. Docker + Jenkins + GitHub).
+
+---
+
+### **🔹 Phase 3: Infrastruktur & Automatisierung (4 Wochen)**  
+**Ziele:** Infrastruktur als Code und Automatisierung verstehen
+
+- **Terraform oder Pulumi** – Infrastructure as Code  
+- **Ansible oder Chef** – Konfigurationsmanagement  
+- **CI/CD vertiefen**: Automatische Tests, Deployments mit Rollbacks, Secrets Management  
+- **Cloud-Plattform vertiefen**: z. B. AWS (EC2, S3, IAM, ECS, EKS)
+
+---
+
+### **🔹 Phase 4: Sicherheit & Best Practices (2 Wochen)**  
+**Ziele:** DevSecOps-Grundlagen & Betriebssicherheit
+
+- **Security in DevOps (DevSecOps)**  
+- Secrets Management (Vault, AWS Secrets Manager)  
+- Code Scanning & Container-Security (Trivy, Snyk)  
+- Rechte- und Rollenkonzepte (RBAC in Kubernetes)  
+
+---
+
+### **🔹 Phase 5: Praxisprojekte & Zertifizierungen (4–6 Wochen)**  
+**Ziele:** Gelerntes anwenden & nachweisen
+
+#### ✅ **Projektideen**:
+- CI/CD-Pipeline für ein Node.js-Projekt mit GitHub Actions + Docker + Kubernetes
+- Monitoring-Stack mit Prometheus + Grafana für eine Webanwendung
+- Infrastruktur auf AWS mit Terraform + Jenkins CI
+
+#### 🧾 **Zertifizierungen (optional):**
+- **Docker Certified Associate**
+- **Certified Kubernetes Administrator (CKA)**
+- **AWS Certified DevOps Engineer**
+- **HashiCorp Terraform Associate**
+
+---
+
+### 📚 **Zusätzliche Ressourcen**
+- [FreeCodeCamp DevOps Video (YouTube)](https://www.youtube.com/watch?v=hQcFE0RD0cQ)
+- [KodeKloud Labs](https://kodekloud.com) – interaktive Übungen
+- [Roadmap.sh – DevOps Roadmap](https://roadmap.sh/devops
