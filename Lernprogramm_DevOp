@@ -4,7 +4,6 @@
 
 ### 📅 **Dauer:** 4–6 Monate (je nach Tempo, 5–10 Std./Woche)
 
----
 
 ### **🔹 Phase 1: Grundlagen verstehen (2–3 Wochen)**  
 **Ziele:** Verständnis für die Philosophie, Prinzipien & den Lebenszyklus von DevOps
@@ -17,7 +16,7 @@
   - [The DevOps Handbook](https://itrevolution.com/the-devops-handbook/)
   - „What is DevOps?“ – YouTube-Videos / LinkedIn Learning / FreeCodeCamp
 
----
+
 
 ### **🔹 Phase 2: Tools & Technologien kennenlernen (4–6 Wochen)**  
 **Ziele:** Die wichtigsten Werkzeuge für jede Phase der Pipeline beherrschen
@@ -55,7 +54,7 @@
 - Code Scanning & Container-Security (Trivy, Snyk)  
 - Rechte- und Rollenkonzepte (RBAC in Kubernetes)  
 
----
+
 
 ### **🔹 Phase 5: Praxisprojekte & Zertifizierungen (4–6 Wochen)**  
 **Ziele:** Gelerntes anwenden & nachweisen
@@ -67,11 +66,9 @@
 
 #### 🧾 **Zertifizierungen (optional):**
 - **Docker Certified Associate**
-- **Certified Kubernetes Administrator (CKA)**
-- **AWS Certified DevOps Engineer**
+- **Certified Kubernetes Add DevOps Engineer**
 - **HashiCorp Terraform Associate**
 
----
 
 ### 📚 **Zusätzliche Ressourcen**
 - [FreeCodeCamp DevOps Video (YouTube)](https://www.youtube.com/watch?v=hQcFE0RD0cQ)
