@@ -6,14 +6,15 @@
 Nach zwei spannenden Jahren als Testing Engineer in der Automobilindustrie und Maintenance & Performance Engineer in der Robotik, starte ich heute ein neues Kapitel: DevOps.
 
 🔍 Was ist DevOps für mich (heute)? 
+
 DevOps ist mehr als nur ein technischer Ansatz – es ist eine Kultur, die Zusammenarbeit, Automatisierung und kontinuierliche Verbesserung fördert. 
 Es bringt Entwickler:innen und IT-Betrieb zusammen, um Software schneller, zuverlässiger und skalierbarer bereitzustellen.
 
 ⚙️ Kernkonzepte, mit denen ich mich jetzt beschäftige:
  
-- Automatisierung:** Manuelle Prozesse durch Skripte und Tools ersetzen – z. B. für Tests, Builds, Deployments.  
-- Skalierung:** Systeme so aufbauen, dass sie bei Bedarf effizient wachsen können.  
-- Infrastruktur als Code (IaC):** Die IT-Infrastruktur wird versionierbar, wiederholbar und automatisiert verwaltbar.
+- Automatisierung: ** Manuelle Prozesse durch Skripte und Tools ersetzen – z. B. für Tests, Builds, Deployments.  
+- Skalierung: ** Systeme so aufbauen, dass sie bei Bedarf effizient wachsen können.  
+- Infrastruktur als Code (IaC): ** Die IT-Infrastruktur wird versionierbar, wiederholbar und automatisiert verwaltbar.
 
 🎯 Warum ist DevOps wichtig?
  
