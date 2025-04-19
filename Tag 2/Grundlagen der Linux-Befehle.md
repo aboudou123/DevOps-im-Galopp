@@ -95,4 +95,4 @@
 - `ip a` oder `ifconfig`  
   Zeigt Netzwerkinterfaces und IP-Adressen an.
 
-
+[Tag 3](https://github.com/aboudou123/DevOps-im-Galopp/tree/main/Tag%203)
