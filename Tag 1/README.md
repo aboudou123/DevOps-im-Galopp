@@ -30,8 +30,8 @@ Ich freue mich, meine Erfahrungen hier mit euch zu teilen – und bin offen für
 
 📝 Übung: Grundlagen des Linux-Befehls
 
-Überprüfen Sie Ihr aktuelles Arbeitsverzeichnis.
-Listen Sie alle Dateien oder Verzeichnisse auf, einschließlich der versteckten Dateien.
+1-Überprüfen Sie Ihr aktuelles Arbeitsverzeichnis.
+2-Listen Sie alle Dateien oder Verzeichnisse auf, einschließlich der versteckten Dateien.
 
 ✅ : Lösung
 
