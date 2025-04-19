@@ -3,7 +3,6 @@
 
 🚀 Erster Tag – 
 
-Nach zwei spannenden Jahren als Testing Engineer in der Automobilindustrie und Maintenance & Performance Engineer in der Robotik, starte ich heute ein neues Kapitel: DevOps.
 
 🔍 Was ist DevOps für mich (heute)? 
 DevOps ist mehr als nur ein technischer Ansatz – es ist eine Kultur, die Zusammenarbeit, Automatisierung und kontinuierliche Verbesserung fördert. 
