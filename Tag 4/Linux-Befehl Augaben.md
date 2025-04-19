@@ -12,4 +12,6 @@ Aufgabe: Mit welchem Linux-Befehl kann man
 
 Reference:
 
+[← Tag 03](../Tag 3/Dateien mit Vim erstellen.md) | [Next Day →](../day04/README.md)
+
  Tag 3/Dateien mit Vim erstellen.md| [Tag 4 →](../)
