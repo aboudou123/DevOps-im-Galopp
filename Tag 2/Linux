@@ -1,1 +1,42 @@
 
+Listing-Befehle
+ls option_flag arguments --> listet die Unterverzeichnisse und Dateien auf, die im aktuellen Verzeichnis vorhanden sind
+
+Beispiele:
+
+ls -l--> listet die Dateien und Verzeichnisse in einem langen Listenformat mit zusätzlichen Informationen auf
+
+ls -a --> listet alle, auch die versteckten Dateien und Verzeichnisse auf
+
+ls *.sh --> listet alle Dateien mit der Erweiterung .sh auf.
+
+ls -i --> listet die Dateien und Verzeichnisse mit Indexnummern auf
+
+ ls -d */ --> listet nur Verzeichnisse auf.(wir können auch ein Muster angeben)
+
+Directoy-Befehle
+pwd --> Arbeitsverzeichnis ausgeben. Gibt das aktuelle Arbeitsverzeichnis an.
+
+cd path_to_directory --> wechselt das Verzeichnis zum angegebenen Pfad
+
+cd ~ oder einfach cd --> wechselt das Verzeichnis zum Heimatverzeichnis
+
+cd - --> wechselt zum letzten Arbeitsverzeichnis.
+
+ cd .. --> wechselt das Verzeichnis einen Schritt zurück.
+
+ cd ../.. --> wechselt das Verzeichnis 2 Ebenen zurück.
+
+ mkdir Verzeichnisname --> um ein Verzeichnis an einem bestimmten Ort zu erstellen
+
+Beispiele:
+
+mkdir newFolder # einen neuen Ordner 'newFolder' erstellen
+
+mkdir .NewFolder # ein verstecktes Verzeichnis erstellen (auch . vor einer Datei, um sie zu verstecken)
+
+mkdir A B C D # mehrere Verzeichnisse gleichzeitig erstellen
+
+mkdir /home/user/Mydirectory # einen neuen Ordner an einem bestimmten Ort erstellen
+
+mkdir -p A/B/C/D # ein verschachteltes Verzeichnis erstellen
