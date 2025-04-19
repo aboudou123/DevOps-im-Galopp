@@ -1,0 +1,21 @@
+
+Nach zwei Jahren Erfahrung als Testing Engineer in der Automobilindustrie und als Maintenance & Performance Engineer in der Robotik möchte ich nun den nächsten Schritt gehen und DevOps erlernen. Mein Ziel ist es, mein technisches Verständnis mit modernen Automatisierungs- und Deployment-Praktiken zu verbinden, um stabile, effiziente und skalierbare Systeme mitzugestalten. Ich freue mich darauf, von der DevOps-Community zu lernen und mich aktiv einzubringen!
+
+
+Definition von DevOps:
+ 
+DevOps ist eine Methode, die Entwicklung (Dev) und IT-Betrieb (Ops) durch Zusammenarbeit, Automatisierung und kontinuierliche Prozesse verbindet, um Software schneller, zuverlässiger und effizienter bereitzustellen.
+
+
+Warum ist DevOps für Softwareingenieure wichtig?
+
+- Schnellere Releases:** Änderungen gelangen zügiger in Produktion.  
+- Zuverlässigkeit:** Automatisierte Tests und Deployments minimieren Fehler.  
+- Zusammenarbeit:** Entwickler und Betrieb arbeiten Hand in Hand.  
+- Skalierbarkeit:** Prozesse sind effizienter und wiederholbar.
+
+
+Wie lange dauert es, eine Änderung zu implementieren?
+ 
+Mit einem gut implementierten DevOps-Prozess: **mehrmals täglich bis in wenigen Minuten**.  
+Ohne DevOps: **mehrere Tage bis Wochen**.
