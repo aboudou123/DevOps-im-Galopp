@@ -10,6 +10,6 @@ Aufgabe: Mit welchem Linux-Befehl kann man
 8. Zeige nur die unteren drei Früchte aus der Datei an.
 9. Um eine weitere Datei Colors.txt zu erstellen und den Inhalt anzuzeigen.
 
-Reference: https://www.linkedin.com/pulse/linux-commands-devops-used-day-to-day-activit-chetan-/
+Reference:
 
-[← Tag 3 ](../https://github.com/aboudou123/DevOps-im-Galopp/blob/main/Tag%203/Dateien%20mit%20Vim%20erstellen.md) | [Tag 4 →](../)
+[← Tag 3 ](../) | [Tag 4 →](../)
