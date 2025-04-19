@@ -12,6 +12,6 @@ Aufgabe: Mit welchem Linux-Befehl kann man
 
 Reference:
 
-[← Tag 3](../) | [Tag 5 →](../)
 
-[Tag 3](https://github.com/aboudou123/DevOps-im-Galopp/blob/main/Tag%203/Dateien%20mit%20Vim%20erstellen.md)
+
+[Tag 3](https://github.com/aboudou123/DevOps-im-Galopp/blob/main/Tag%203/Dateien%20mit%20Vim%20erstellen.md) | [Tag 5]
