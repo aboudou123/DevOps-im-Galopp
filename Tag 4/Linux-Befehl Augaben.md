@@ -12,4 +12,4 @@ Aufgabe: Mit welchem Linux-Befehl kann man
 
 Reference:
 
-[← Tag 3](../Tag 3/README.md) | [Tag 5 →](../)
+[← Tag 3](../) | [Tag 5 →](../)
