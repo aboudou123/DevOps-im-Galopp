@@ -29,4 +29,4 @@ Ich freue mich, meine Erfahrungen hier mit euch zu teilen – und bin offen für
 
 
 
-[2.tag →](../day02/README.md)
+[2.tag →](https://github.com/aboudou123/DevOps-im-Galopp/tree/main/Tag%202))
