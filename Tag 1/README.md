@@ -26,6 +26,15 @@ Ich freue mich, meine Erfahrungen hier mit euch zu teilen – und bin offen für
 
 #DevOps #CareerChange #LearningInPublic #Automation #InfrastructureAsCode #CI_CD #ErsterTag
 
+🎯Linux
+
+📝 Übung: Grundlagen des Linux-Befehls
+
+Überprüfen Sie Ihr aktuelles Arbeitsverzeichnis.
+Listen Sie alle Dateien oder Verzeichnisse auf, einschließlich der versteckten Dateien.
+
+✅ : Lösung
+
 Einführung in die Linux-Befehle
 
 ls --> Der Befehl ls wird verwendet, um Dateien oder Verzeichnisse in Linux und anderen Unix-basierten Betriebssystemen aufzulisten
