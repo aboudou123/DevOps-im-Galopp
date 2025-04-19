@@ -25,7 +25,21 @@ Mein erster Schritt:** Ich beginne mit einer **DevOps-Roadmap**, um die Schlüss
 Ich freue mich, meine Erfahrungen hier mit euch zu teilen – und bin offen für jede Empfehlung, Ressource oder Austausch! 💬
 
 #DevOps #CareerChange #LearningInPublic #Automation #InfrastructureAsCode #CI_CD #ErsterTag
+
+Einführung in die Linux-Befehle
+
+ls --> Der Befehl ls wird verwendet, um Dateien oder Verzeichnisse in Linux und anderen Unix-basierten Betriebssystemen aufzulisten
+
+<img width="860" alt="LS" src="https://github.com/user-attachments/assets/adf3a94a-affb-4739-a36d-4ff6959c021a" />
+
+
 <img width="682" alt="Excerci1 Oracle VirtualBox" src="https://github.com/user-attachments/assets/6c789267-e86c-4773-898f-559461b713ae" />
+
+ls -l--> Mit dem Befehl ls -l können Sie den Inhalt des Verzeichnisses in Tabellenform mit den folgenden Spalten auflisten
+
+
+<img width="637" alt="LS_L" src="https://github.com/user-attachments/assets/6cf53d03-e55d-4fb7-ae46-9eaee8ce0375" />
+
 
 
 
