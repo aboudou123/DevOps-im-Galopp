@@ -2,26 +2,30 @@
 Nach zwei spannenden Jahren als Testing Engineer in der Automobilindustrie und Maintenance & Performance Engineer in der Robotik, starte ich heute ein neues Kapitel: DevOps.
 
 
-## 🧠 **Lernprogramm: DevOps von A bis Z**
+🧠 Lernprogramm: DevOps von A bis Z
 
-### 📅 **Dauer:** 4–6 Monate (je nach Tempo, 5–10 Std./Woche)
+📅 **Dauer:** 4–6 Monate (je nach Tempo, 5–10 Std./Woche)
 
 
-### **🔹 Phase 1: Grundlagen verstehen (2–3 Wochen)**  
-**Ziele:** Verständnis für die Philosophie, Prinzipien & den Lebenszyklus von DevOps
+🔹 Phase 1: Grundlagen verstehen (2–3 Wochen)**  
+Ziele: Verständnis für die Philosophie, Prinzipien & den Lebenszyklus von DevOps
 
-- **Was ist DevOps?**  
+-Was ist DevOps?
+ 
   - Prinzipien: *Collaboration, Automation, CI/CD, Monitoring*
   - Agile vs. DevOps  
   - DevOps Lifecycle: Plan → Develop → Build → Test → Release → Deploy → Operate → Monitor
-- **Lernressourcen:**  
+
+- Lernressourcen:
+
   - [The DevOps Handbook](https://itrevolution.com/the-devops-handbook/)
-  - „What is DevOps?“ – YouTube-Videos / LinkedIn Learning / FreeCodeCamp
+  - „What is DevOps?“ 
 
 
 
-### **🔹 Phase 2: Tools & Technologien kennenlernen (4–6 Wochen)**  
-**Ziele:** Die wichtigsten Werkzeuge für jede Phase der Pipeline beherrschen
+🔹 Phase 2: Tools & Technologien kennenlernen (4–6 Wochen)
+
+Ziele: Die wichtigsten Werkzeuge für jede Phase der Pipeline beherrschen
 
 | Phase     | Tools                        | Was du lernen solltest                          |
 |-----------|------------------------------|-------------------------------------------------|
@@ -38,30 +42,29 @@ Nach zwei spannenden Jahren als Testing Engineer in der Automobilindustrie und M
 
 ---
 
-### **🔹 Phase 3: Infrastruktur & Automatisierung (4 Wochen)**  
-**Ziele:** Infrastruktur als Code und Automatisierung verstehen
+🔹 Phase 3: Infrastruktur & Automatisierung (4 Wochen)**  
+Ziele:** Infrastruktur als Code und Automatisierung verstehen
 
-- **Terraform oder Pulumi** – Infrastructure as Code  
-- **Ansible oder Chef** – Konfigurationsmanagement  
-- **CI/CD vertiefen**: Automatische Tests, Deployments mit Rollbacks, Secrets Management  
-- **Cloud-Plattform vertiefen**: z. B. AWS (EC2, S3, IAM, ECS, EKS)
+- Terraform oder Pulumi – Infrastructure as Code  
+- Ansible oder Chef** – Konfigurationsmanagement  
+- CI/CD vertiefen**: Automatische Tests, Deployments mit Rollbacks, Secrets Management  
+- Cloud-Plattform vertiefen**: z. B. AWS (EC2, S3, IAM, ECS, EKS)
 
----
+🔹 Phase 4: Sicherheit & Best Practices (2 Wochen)**  
+Ziele:DevSecOps-Grundlagen & Betriebssicherheit
 
-### **🔹 Phase 4: Sicherheit & Best Practices (2 Wochen)**  
-**Ziele:** DevSecOps-Grundlagen & Betriebssicherheit
-
-- **Security in DevOps (DevSecOps)**  
+- Security in DevOps (DevSecOps)
 - Secrets Management (Vault, AWS Secrets Manager)  
 - Code Scanning & Container-Security (Trivy, Snyk)  
 - Rechte- und Rollenkonzepte (RBAC in Kubernetes)  
 
 
 
-### **🔹 Phase 5: Praxisprojekte & Zertifizierungen (4–6 Wochen)**  
-**Ziele:** Gelerntes anwenden & nachweisen
+🔹 Phase 5: Praxisprojekte & Zertifizierungen (4–6 Wochen) 
+Ziele: Gelerntes anwenden & nachweisen
 
-#### ✅ **Projektideen**:
+✅ Projektideen:
+
 - CI/CD-Pipeline für ein Node.js-Projekt mit GitHub Actions + Docker + Kubernetes
 - Monitoring-Stack mit Prometheus + Grafana für eine Webanwendung
 - Infrastruktur auf AWS mit Terraform + Jenkins CI
