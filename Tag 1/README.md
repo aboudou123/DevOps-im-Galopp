@@ -25,6 +25,7 @@ Mein erster Schritt:** Ich beginne mit einer **DevOps-Roadmap**, um die Schlüss
 Ich freue mich, meine Erfahrungen hier mit euch zu teilen – und bin offen für jede Empfehlung, Ressource oder Austausch! 💬
 
 #DevOps #CareerChange #LearningInPublic #Automation #InfrastructureAsCode #CI_CD #ErsterTag
+<img width="682" alt="Excerci1 Oracle VirtualBox" src="https://github.com/user-attachments/assets/6c789267-e86c-4773-898f-559461b713ae" />
 
 
 
