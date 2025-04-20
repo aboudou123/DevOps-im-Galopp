@@ -113,6 +113,42 @@ comm -12 <(sort fruit.txt) <(sort flagge.txt)
 
 <img width="629" alt="11" src="https://github.com/user-attachments/assets/189187bb-5ae3-4312-9649-09016dec1e67" />
 
+### 🔍 **3. Inhalt anzeigen**
+```bash
+cat flagge.txt
+```
+
+---
+
+💡 Ergebnis:
+```
+Gelb
+Rot
+Rosa
+Weiß
+Schwarz
+Blau
+Orange
+Lila
+Grau
+```
+
+Die Liste auch alphabetisch sortieren? 
+
+Das speichert die sortierte Liste in einer neuen Datei namens sortierte_flagge.txt.
+
+sort flagge.txt > sortierte_flagge.txt
+
+Sortierte Datei anzeigen:
+
+cat sortierte_flagge.txt
+
+<img width="538" alt="alphabetisch" src="https://github.com/user-attachments/assets/bf8370dd-f6b6-4081-95d2-b5ffa810b8c0" />
+
+
+
+
+
 
 
 Augabe 12: Zählen Sie die Anzahl der Zeilen, Wörter und Zeichen in `fruits.txt` und `flagge.txt`..
