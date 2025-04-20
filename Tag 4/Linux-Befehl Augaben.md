@@ -1,14 +1,32 @@
+# Basic Linux Commands - Tag 4
+
+
 Aufgabe: Mit welchem Linux-Befehl kann man
 
-1. anzeigen, was in einer Datei geschrieben wurde.
-2. Die Zugriffsrechte von Dateien zu ändern.
-3. Zu überprüfen, welche Befehle Sie bis jetzt ausgeführt haben.
-4. Ein Verzeichnis/einen Ordner zu löschen.
-5. Eine Datei fruits.txt zu erstellen und den Inhalt einzusehen.
-6. Hinzufügen von Inhalten in devops.txt (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche
-7. So zeigen Sie nur die ersten drei Früchte der Datei an.
-8. Zeige nur die unteren drei Früchte aus der Datei an.
-9. Um eine weitere Datei Colors.txt zu erstellen und den Inhalt anzuzeigen.
+Aufgabe 1: Anzeigen des Inhalts einer Datei und Angabe der Zeilennummern.
+
+Aufgabe 2: Ändern Sie die Zugriffsrechte von Dateien, so dass sie nur vom Eigentümer gelesen, geschrieben und ausgeführt werden können.
+
+Aufgabe 3: Prüfen Sie die zuletzt von Ihnen ausgeführten 10 Befehle.
+
+Augabe  4: Entfernen eines Verzeichnisses und seines gesamten Inhalts.
+
+Augabe  5: Erstellen Sie eine Datei `koffit.txt`, fügen Sie den Inhalt hinzu (eine Frucht pro Zeile), und zeigen Sie den Inhalt an.
+
+Augabe  6: Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Ananas“ an das Ende der Datei an..
+
+Augabe  7: Zeigen Sie die ersten drei Früchte aus der Datei in umgekehrter Reihenfolge.
+
+Augabe  8: Zeigen Sie die untersten drei Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
+
+Augabe  9: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an..
+
+Augabe  10: Fügen Sie den Inhalt der Datei `flagge.txt` hinzu (eine in jeder Zeile) - Rot, Rosa, Weiß, Schwarz, Blau, Orange, Lila, Grau. Dann fügen Sie „Gelb“ am Anfang der Datei ein..
+
+Augabe  11: Finde die Zeilen, die `fruits.txt` und `Colors.txt` gemeinsam haben, und zeige sie an.
+
+Augabe  12: Zählen Sie die Anzahl der Zeilen, Wörter und Zeichen in `fruits.txt` und `flagge.txt`..
+
 
 Reference:
 
