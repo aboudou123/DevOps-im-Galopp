@@ -88,11 +88,83 @@ sed -i '1i Gelb' flagge.txt
 
 Augabe 11: Finde die Zeilen, die `fruits.txt` und `Colors.txt` gemeinsam haben, und zeige sie an.
 
+Um die Zeilen zu finden, die sowohl in der Datei `fruit.txt` als auch in `flagge.txt` vorhanden sind, kannst man den **Befehl `comm`** verwenden. Dieser vergleicht zwei Dateien und zeigt die gemeinsamen Zeilen an.
+
+Hier ist der Befehl:
+
+
+### ✅ **Gemeinsame Zeilen finden und anzeigen:**
+```bash
+comm -12 <(sort fruit.txt) <(sort flagge.txt)
+```
+
+
+### 🔍 Erklärung:
+- `comm` vergleicht zwei Dateien und zeigt:
+  - **`-1`** → Zeilen, die nur in der ersten Datei (`fruit.txt`) sind.
+  - **`-2`** → Zeilen, die nur in der zweiten Datei (`flagge.txt`) sind.
+  - **`-12`** → Zeilen, die in beiden Dateien sind (diese werden angezeigt).
+
+- `<(sort fruit.txt)` und `<(sort flagge.txt)` sortieren die Dateien zuerst, weil `comm` nur dann korrekt funktioniert, wenn die Dateien sortiert sind.
+
+
+**Beispiel**: Wenn in beiden Dateien eine Zeile wie „Rot“ vorkommt, wird sie angezeigt.
+
+
+<img width="629" alt="11" src="https://github.com/user-attachments/assets/189187bb-5ae3-4312-9649-09016dec1e67" />
 
 
 
 Augabe 12: Zählen Sie die Anzahl der Zeilen, Wörter und Zeichen in `fruits.txt` und `flagge.txt`..
 
 
+Um die **Anzahl der Zeilen**, **Wörter** und **Zeichen** in den Dateien `fruit.txt` und `flagge.txt` zu zählen, kann man den Befehl `wc` verwenden. Hier ist der Befehl:
+
+
+
+<img width="484" alt="12" src="https://github.com/user-attachments/assets/ab7a4927-c83d-4b1c-9920-3098fdf5bc90" />
+
+
+
+### ✅ **Zeilen, Wörter und Zeichen zählen:**
+```bash
+wc fruit.txt flagge.txt
+
+### 🔍 Erklärung:
+- `wc` steht für **word count** und gibt uns die **Anzahl der Zeilen**, **Wörter** und **Zeichen** in jeder Datei.
+- Die Ausgabe zeigt:
+  1. **Zeilenanzahl**  
+  2. **Wörter**  
+  3. **Zeichen**  
+  4. Den Dateinamen
+
+
+### 📊 Beispiel:
+Wenn  `fruit.txt` und `flagge.txt` so aussehen:
+**fruit.txt**:
+```
+Apfel  
+Banane  
+Mango
+```
+
+**flagge.txt**:
+```
+Rot  
+Blau  
+Gelb
+```
+
+Die Ausgabe von `wc fruit.txt flagge.txt` ist :
+```
+       3       12      56 fruit.txt
+       3       12      42 flagge.txt
+       6       24      98 total
+<img width="603" alt="Ausgabe von wc fruit txt flagge txt" src="https://github.com/user-attachments/assets/c898af85-cfd7-4c70-9f33-8c1fc129ac85" />
+
+
+- **3** Zeilen in jeder Datei
+- **12 Wörter insgesamt**
+- **98 Zeichen insgesamt**
 
 
