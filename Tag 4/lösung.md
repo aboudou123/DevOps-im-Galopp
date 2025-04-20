@@ -47,31 +47,32 @@ Hier hat die Zeile mit 1 begonnen. In 1 gibt es keine Früchte. Die 4. Frucht is
 <img width="559" alt="Modifikation" src="https://github.com/user-attachments/assets/742cce8d-2dd0-408f-85d5-9f663eb4e39d" />
 
 Augabe 8: Zeigen Sie die untersten Vier Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
+
 <img width="501" alt="unteren" src="https://github.com/user-attachments/assets/855988b8-5fdf-4b66-be13-795fdbbc0a08" />
 
 <img width="617" alt="4fruit renverse" src="https://github.com/user-attachments/assets/0a16872b-5480-4f67-ae7c-101074900b41" />
 
-
-
-Augabe 9: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an..
+Augabe 9: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an.
 
 echo -e "Rot\nGelb\nGrün" > flagge.txt
+
 🔹 -e erlaubt das Verwenden von \n für Zeilenumbrüche.
 🔹 Dadurch hast du eine Farbe pro Zeile in der Datei.
+
 <img width="588" alt="Datei_Flagge" src="https://github.com/user-attachments/assets/59ecf4ee-8344-477f-a50b-3f709c97c32b" />
 
 
-Augabe 10: Fügen Sie den Inhalt der Datei `flagge.txt` hinzu (eine in jeder Zeile) - Rot, Rosa, Weiß, Schwarz, Blau, Orange, Lila, Grau. Dann fügen Sie „Gelb“ am Anfang der Datei ein..
+Augabe 10: Fügen Sie den Inhalt der Datei `flagge.txt` hinzu (eine in jeder Zeile) - Rot, Rosa, Weiß, Schwarz, Blau, Orange, Lila, Grau. Dann fügen Sie „Gelb“ am Anfang der Datei ein.
 
 <img width="606" alt="9_10" src="https://github.com/user-attachments/assets/443b3161-cfc5-4bf9-b176-ed2339835671" />
 
 Inhalt in `flagge.txt` einfügen – **jede Farbe in einer Zeile** – und dann **„Gelb“ an den Anfang** setzen:
 
 ### ✅ **1. Datei mit Farben erstellen**
+
 ```bash
 echo -e "Rot\nRosa\nWeiß\nSchwarz\nBlau\nOrange\nLila\nGrau" > flagge.txt
 ```
-
 ###  **2. „Gelb“ an den Anfang der Datei einfügen**
 
 ```bash
@@ -83,7 +84,6 @@ sed -i '1i Gelb' flagge.txt
 
 
 <img width="576" alt="Datei_Farben" src="https://github.com/user-attachments/assets/eaada526-6e73-4e55-ab3b-4d9b3a9cb322" />
-
 
 
 Augabe 11: Finde die Zeilen, die `fruits.txt` und `Colors.txt` gemeinsam haben, und zeige sie an.
@@ -144,11 +144,6 @@ Sortierte Datei anzeigen:
 cat sortierte_flagge.txt
 
 <img width="538" alt="alphabetisch" src="https://github.com/user-attachments/assets/bf8370dd-f6b6-4081-95d2-b5ffa810b8c0" />
-
-
-
-
-
 
 
 Augabe 12: Zählen Sie die Anzahl der Zeilen, Wörter und Zeichen in `fruits.txt` und `flagge.txt`..
