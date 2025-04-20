@@ -13,7 +13,7 @@ Augabe  4: Entfernen eines Verzeichnisses und seines gesamten Inhalts.
 
 Augabe  5: Erstellen Sie eine Datei `koffit.txt`, fügen Sie den Inhalt hinzu (eine Frucht pro Zeile), und zeigen Sie den Inhalt an.
 
-Augabe  6: Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Ananas“ an das Ende der Datei an..
+Augabe  6: Fügen Sie den Inhalt der Datei `fruit.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Ananas“ an das Ende der Datei an..
 
 Augabe  7: Zeigen Sie die ersten drei Früchte aus der Datei in umgekehrter Reihenfolge.
 
