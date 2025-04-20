@@ -47,6 +47,7 @@ Hier hat die Zeile mit 1 begonnen. In 1 gibt es keine Früchte. Die 4. Frucht is
 <img width="559" alt="Modifikation" src="https://github.com/user-attachments/assets/742cce8d-2dd0-408f-85d5-9f663eb4e39d" />
 
 Augabe 8: Zeigen Sie die untersten Vier Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
+<img width="501" alt="unteren" src="https://github.com/user-attachments/assets/855988b8-5fdf-4b66-be13-795fdbbc0a08" />
 
 <img width="617" alt="4fruit renverse" src="https://github.com/user-attachments/assets/0a16872b-5480-4f67-ae7c-101074900b41" />
 
