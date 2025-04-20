@@ -23,7 +23,7 @@
 <img width="771" alt="löschung 2" src="https://github.com/user-attachments/assets/f97bea19-84ff-4f06-be3f-18325cf52712" />
 
 **Augabe 5** : Erstellen Sie eine Datei `koffit.txt`, fügen Sie den Inhalt hinzu (eine Frucht pro Zeile), und zeigen Sie den Inhalt an.
-Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Orange, ademe, kafe, cacao, mangue, Orange, ademe,kafe, cacao, mangue, canes
+Fügen Sie den Inhalt der Datei `fruit.txt` hinzu (eine in jeder Zeile) - Orange, ademe, kafe, cacao, mangue, Orange, ademe,kafe, cacao, mangue, canes
 
 <img width="402" alt="Vim" src="https://github.com/user-attachments/assets/c2efdb5b-927e-4625-a105-a5fba3471765" />
 
@@ -31,7 +31,6 @@ Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Orang
 **Augabe 6**: Fügen Sie den Inhalt der Datei `fruit.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. 
 
 Fügen Sie dann „Mango“ und   „Guave“   an das Ende der Datei an..
-
 
 <img width="575" alt="7" src="https://github.com/user-attachments/assets/1d66413f-64ea-4519-8dd8-628401e6795f" />
 
