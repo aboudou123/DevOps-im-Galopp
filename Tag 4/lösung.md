@@ -56,9 +56,13 @@ Wenn wir die Liste rückwärts laufen lassen, wäre „Orange“ die erste Fruch
 
 **Augabe 9**: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an.
 
+```bash
 echo -e "Rot\nGelb\nGrün" > flagge.txt
 
+```
+
 🔹 -e erlaubt das Verwenden von \n für Zeilenumbrüche.
+
 🔹 Dadurch hast du eine Farbe pro Zeile in der Datei.
 
 <img width="588" alt="Datei_Flagge" src="https://github.com/user-attachments/assets/59ecf4ee-8344-477f-a50b-3f709c97c32b" />
