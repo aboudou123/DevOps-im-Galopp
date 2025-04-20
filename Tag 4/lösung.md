@@ -30,17 +30,25 @@ Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Orang
 <img width="402" alt="Vim" src="https://github.com/user-attachments/assets/c2efdb5b-927e-4625-a105-a5fba3471765" />
 
 
-Augabe 6: Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Ananas“ an das Ende der Datei an..
+Augabe 6: Fügen Sie den Inhalt der Datei `fruit.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Mango“ und   „Guave“   an das Ende der Datei an..
+<img width="575" alt="7" src="https://github.com/user-attachments/assets/1d66413f-64ea-4519-8dd8-628401e6795f" />
 
 
 
-Augabe 7: Zeigen Sie die ersten drei Früchte aus der Datei in umgekehrter Reihenfolge.
+Augabe 7: Zeigen Sie die ersten Vier Früchte aus der Datei in umgekehrter Reihenfolge.
+
+<img width="617" alt="4fruit renverse" src="https://github.com/user-attachments/assets/57a8fae6-95e8-4272-8ae1-e552a41baa3d" />
+
+Hier hat die Zeile mit 1 begonnen. In 1 gibt es keine Früchte. Die 4. Frucht ist daher Orange. Wenn wir die Liste rückwärts laufen lassen, wäre „Orange“ die erste Frucht und 0 wäre die vierte Frucht.
+
+<img width="490" alt="4 fruits" src="https://github.com/user-attachments/assets/3eb34568-7f99-42a5-a3a2-f6ebdb4e8750" />
 
 
+<img width="559" alt="Modifikation" src="https://github.com/user-attachments/assets/742cce8d-2dd0-408f-85d5-9f663eb4e39d" />
 
+Augabe 8: Zeigen Sie die untersten Vier Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
 
-Augabe 8: Zeigen Sie die untersten drei Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
-
+<img width="617" alt="4fruit renverse" src="https://github.com/user-attachments/assets/0a16872b-5480-4f67-ae7c-101074900b41" />
 
 
 
