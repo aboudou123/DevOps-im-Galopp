@@ -55,11 +55,34 @@ Augabe 8: Zeigen Sie die untersten Vier Früchte aus der Datei und sortieren Sie
 
 Augabe 9: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an..
 
-
+echo -e "Rot\nGelb\nGrün" > flagge.txt
+🔹 -e erlaubt das Verwenden von \n für Zeilenumbrüche.
+🔹 Dadurch hast du eine Farbe pro Zeile in der Datei.
+<img width="588" alt="Datei_Flagge" src="https://github.com/user-attachments/assets/59ecf4ee-8344-477f-a50b-3f709c97c32b" />
 
 
 Augabe 10: Fügen Sie den Inhalt der Datei `flagge.txt` hinzu (eine in jeder Zeile) - Rot, Rosa, Weiß, Schwarz, Blau, Orange, Lila, Grau. Dann fügen Sie „Gelb“ am Anfang der Datei ein..
 
+<img width="606" alt="9_10" src="https://github.com/user-attachments/assets/443b3161-cfc5-4bf9-b176-ed2339835671" />
+
+Inhalt in `flagge.txt` einfügen – **jede Farbe in einer Zeile** – und dann **„Gelb“ an den Anfang** setzen:
+
+### ✅ **1. Datei mit Farben erstellen**
+```bash
+echo -e "Rot\nRosa\nWeiß\nSchwarz\nBlau\nOrange\nLila\nGrau" > flagge.txt
+```
+
+###  **2. „Gelb“ an den Anfang der Datei einfügen**
+
+```bash
+sed -i '1i Gelb' flagge.txt
+```
+
+🔹 `sed -i` = Datei direkt bearbeiten  
+🔹 `'1i Gelb'` = in Zeile 1 „Gelb“ einfügen
+
+
+<img width="576" alt="Datei_Farben" src="https://github.com/user-attachments/assets/eaada526-6e73-4e55-ab3b-4d9b3a9cb322" />
 
 
 
