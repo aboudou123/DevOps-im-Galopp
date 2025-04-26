@@ -271,6 +271,14 @@ git config --list
 
 ---
 
+
+
+
+<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/238ef3b3-f870-462f-bedd-ce9722dfb32d" />
+
+
+
+
 ```
 koffi@koffi-VirtualBox:~$ git config --global user.name "DePatrick"
 koffi@koffi-VirtualBox:~$ git config --global user.email "depatrick22@yahoo.com"
