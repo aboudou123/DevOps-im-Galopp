@@ -40,14 +40,38 @@
 ![image](https://github.com/user-attachments/assets/1ed5d8e9-7f35-4df8-8cf1-ca5f83319c42)
 
 
+Creer un groupe
+
+![image](https://github.com/user-attachments/assets/7c19af71-cc02-4a9d-9245-6ba1f16ea3a7)
+
+
+Verrifier si le nom du groupe est present
+
 ![image](https://github.com/user-attachments/assets/e856ad57-456f-410e-893a-c4274e555f43)
 
+Ajoutons un autre utilisteur dans le groupe
+
+![image](https://github.com/user-attachments/assets/179f05cc-18e6-477e-97c5-fe7dadace7e4)
+
+![image](https://github.com/user-attachments/assets/60f806b0-60fc-45df-8818-780460259651)
+
+
+Commande top
+
+![image](https://github.com/user-attachments/assets/e7d9a618-5093-4e6b-b00b-9bbb3b8eed43)
 
 
 
+Verrifier l'espace de votre disque
+
+![image](https://github.com/user-attachments/assets/f2b2979f-e748-4f0f-aad8-f8c39d2bd607)
 
 
+Creer un Utilisateur
 
+![image](https://github.com/user-attachments/assets/595968f1-3ab5-42c6-ab1d-ca4156e0049d)
+
+===============================================================================
 **Änderung von Rechten**:
 - `chmod` (change mode): Rechte ändern
 - `chown` (change owner): Eigentümer ändern
