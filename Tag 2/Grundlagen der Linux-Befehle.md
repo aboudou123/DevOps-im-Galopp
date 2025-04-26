@@ -1,98 +1,87 @@
-### 1. **Verzeichnis- und Dateiliste**
+ **Linux Dateiberechtigungen und Zugriffskontrolllisten (ACLs)**
 
-- `ls`  
-  Listet Dateien und Verzeichnisse im aktuellen Verzeichnis auf.  
-  Beispiele:
-  - `ls` – Zeigt alle Dateien im aktuellen Verzeichnis an.
-  - `ls -l` – Zeigt detaillierte Dateiinformationen (Größe, Berechtigungen, Erstellungsdatum, etc.).
-  - `ls -a` – Zeigt auch versteckte Dateien (die mit einem Punkt beginnen) an.
-  - `ls -lh` – Zeigt detaillierte Dateiinformationen in menschenlesbarem Format an (z. B. Dateigröße in KB/MB).
-  - `ls -R` – Listet Dateien rekursiv in Unterverzeichnissen auf.
+---
 
-- `dir`  
-  Eine alternative Methode zum Auflisten von Verzeichnissen und Dateien (manchmal auf alten Systemen verfügbar).
+## 1. **Grundlagen: Dateiberechtigungen in Linux**
+In Linux hat **jede Datei und jedes Verzeichnis** Berechtigungen, die sich auf drei Gruppen beziehen:
 
-- `tree`  
-  Listet Verzeichnisse und Dateien in einer baumartigen Struktur auf (muss manchmal installiert werden).  
-  Beispiel:  
-  - `tree` – Zeigt die Verzeichnisstruktur und Dateien an.
+| Kategorie  | Beschreibung |
+|:-----------|:-------------|
+| **Owner**  | Eigentümer der Datei |
+| **Group**  | Benutzer, die zur Gruppenzugehörigkeit der Datei passen |
+| **Others** | Alle anderen Benutzer |
 
-### 2. **Dateiinformationen**
+Jede dieser Kategorien hat **drei mögliche Rechte**:
+- **r** = read (lesen)
+- **w** = write (schreiben)
+- **x** = execute (ausführen)
 
-- `stat [Dateiname]`  
-  Zeigt detaillierte Informationen über eine Datei, z. B. Last Access, Last Modification, Dateigröße und mehr.
+**Berechtigungsanzeige** (z.B. mit `ls -l`):
+```
+-rwxr-xr--
+| | | | |
+| | | | +-- Others: read + no write + no execute
+| | | +---- Group: read + no write + execute
+| | +------ Owner: read + write + execute
+| +-------- Dateityp: - (Datei) oder d (Verzeichnis)
+```
 
-- `file [Dateiname]`  
-  Bestimmt den Dateityp einer Datei, z. B. ob es sich um ein Textdokument, ein Skript, eine Bilddatei etc. handelt.
+**Änderung von Rechten**:
+- `chmod` (change mode): Rechte ändern
+- `chown` (change owner): Eigentümer ändern
+- `chgrp` (change group): Gruppe ändern
 
-- `du`  
-  Schätzt die Dateigröße eines Verzeichnisses und seiner Unterverzeichnisse.  
-  Beispiel:  
-  - `du -sh` – Gibt die Größe des aktuellen Verzeichnisses in einer menschenlesbaren Form (z. B. 1K, 234M, 2G) aus.
-  
-- `df`  
-  Zeigt die Festplattenbelegung an.  
-  Beispiel:  
-  - `df -h` – Zeigt die Festplattenbelegung in einem menschenlesbaren Format an (z. B. GB).
+Beispiel:
+```bash
+chmod 755 datei.txt
+# Owner: lesen, schreiben, ausführen
+# Group: lesen, ausführen
+# Others: lesen, ausführen
+```
 
-### 3. **Prozess- und Systemlisten**
+---
 
-- `ps`  
-  Zeigt die aktuellen Prozesse an.  
-  Beispiele:
-  - `ps` – Zeigt die Prozesse im aktuellen Terminal an.
-  - `ps aux` – Zeigt alle Prozesse des Systems an.
-  - `ps -ef` – Eine weitere Variante, die alle Prozesse in einem standardisierten Format zeigt.
+## 2. **Erweiterung: Zugriffskontrolllisten (ACLs)**
+Die normalen Dateiberechtigungen reichen oft nicht, wenn man komplexere Zugriffsregeln braucht. **ACLs** (Access Control Lists) erlauben es, **feiner** zu steuern, wer was darf.
 
-- `top`  
-  Zeigt die laufenden Prozesse in Echtzeit an und gibt eine Übersicht über Systemressourcen wie CPU, RAM und Auslastung.
+### Vorteile von ACLs:
+- Zugriff für **mehrere Benutzer oder Gruppen** individuell definieren.
+- **Flexiblere Kontrolle** als mit klassischen Berechtigungen.
 
-- `htop`  
-  Eine erweiterte, farbige Version von `top`, die eine interaktive Benutzeroberfläche bietet (muss auf manchen Systemen installiert werden).
+### Wichtige Befehle:
 
-- `pstree`  
-  Zeigt Prozesse in einer baumartigen Struktur, die die Hierarchie der Prozesse zeigt.
+| Befehl | Beschreibung |
+|:------|:-------------|
+| `getfacl datei.txt` | Zeigt die ACL einer Datei an |
+| `setfacl` | Setzt oder ändert ACLs |
 
-- `lsof`  
-  Listet alle geöffneten Dateien und die Prozesse auf, die sie verwenden. Sehr hilfreich, um herauszufinden, welche Prozesse auf eine Datei zugreifen.
+### Beispiel: ACL setzen
+```bash
+setfacl -m u:alice:rwx datei.txt
+```
+➡️ Benutzer **alice** erhält **lesen, schreiben, ausführen** Rechte auf `datei.txt`, unabhängig von normalen Rechten.
 
-### 4. **Benutzer- und Gruppeninformationen**
+Weitere Beispiele:
+- Zugriff für eine Gruppe erlauben:
+  ```bash
+  setfacl -m g:entwickler:r-- datei.txt
+  ```
+- Standard-ACLs für ein Verzeichnis setzen (vererben an neue Dateien):
+  ```bash
+  setfacl -d -m u:bob:rw- /verzeichnis
+  ```
 
-- `who`  
-  Zeigt an, wer im Moment angemeldet ist.
+---
 
-- `w`  
-  Zeigt an, wer aktuell angemeldet ist und welche Aktivitäten sie ausführen.
+## 3. **Zusammenspiel: Standardrechte und ACLs**
+- Wenn eine Datei ACLs hat, wird bei `ls -l` ein `+` angezeigt:
+  ```bash
+  -rw-r--r--+ 1 user group 0 Apr 26 09:00 datei.txt
+  ```
+- Ohne explizite ACLs gelten nur die klassischen Owner-Group-Others Regeln.
 
-- `id`  
-  Zeigt die Benutzer-ID und Gruppen-ID des aktuellen Benutzers an.
+---
 
-- `groups`  
-  Listet die Gruppen auf, zu denen der Benutzer gehört.
 
-### 5. **Paketlisten (bei Paketmanagern)**
-
-- `dpkg -l` (Debian/Ubuntu)  
-  Listet alle installierten Pakete auf.
-
-- `rpm -qa` (RedHat/CentOS)  
-  Listet alle installierten Pakete auf.
-
-- `yum list installed` (RedHat/CentOS)  
-  Listet alle installierten Pakete auf.
-
-- `apt list --installed` (Debian/Ubuntu)  
-  Listet alle installierten Pakete auf.
-
-### 6. **Weitere nützliche Listenbefehle**
-
-- `lsblk`  
-  Listet alle Blockgeräte auf (Festplatten, Partitionen, etc.).
-
-- `mount`  
-  Zeigt alle aktuell gemounteten Dateisysteme an.
-
-- `ip a` oder `ifconfig`  
-  Zeigt Netzwerkinterfaces und IP-Adressen an.
 
 [Tag 3](https://github.com/aboudou123/DevOps-im-Galopp/tree/main/Tag%203)
