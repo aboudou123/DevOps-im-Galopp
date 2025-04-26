@@ -268,18 +268,9 @@ git config --global core.editor "code --wait"
 
 # 4. Config anzeigen
 git config --list
-
----
-
-
-
-
-<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/238ef3b3-f870-462f-bedd-ce9722dfb32d" />
-
-
-
-
 ```
+
+
 koffi@koffi-VirtualBox:~$ git config --global user.name "DePatrick"
 koffi@koffi-VirtualBox:~$ git config --global user.email "depatrick22@yahoo.com"
 
@@ -287,12 +278,6 @@ koffi@koffi-VirtualBox:~$ git config --global user.email "depatrick22@yahoo.com"
 koffi@koffi-VirtualBox:~$ git config --list // Pour voir le resultat de ce qui est fait
 
 ![image](https://github.com/user-attachments/assets/9a8e82e9-782c-485b-8bfb-a759cf92eceb)
-
-
-
-
-
-
 
 
 ### 🔹 Nützliche Git-Befehle für den Alltag
