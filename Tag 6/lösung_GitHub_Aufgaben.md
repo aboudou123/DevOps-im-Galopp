@@ -14,7 +14,6 @@ sudo apt-get install git
 
 Add Konfiguration: Git Config
 
-![image](https://github.com/user-attachments/assets/b65ac002-2255-4c20-8443-59165124e021)
 
 <img width="396" alt="3" src="https://github.com/user-attachments/assets/166038a0-2eec-4ba2-b7f8-e712ba690923" />
 
