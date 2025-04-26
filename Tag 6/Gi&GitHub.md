@@ -260,6 +260,15 @@ Diese Einstellungen brauchst du, damit deine Commits richtig zugeordnet werden.
 # 1. Nutzername setzen
 git config --global user.name "Max Mustermann"
 
+![image](https://github.com/user-attachments/assets/492f9236-3d26-4998-baaa-8bc90c4bfbfc)
+![image](https://github.com/user-attachments/assets/59a25942-22fc-4563-b864-17718b47fd5e)
+
+
+
+
+
+
+
 # 2. E-Mail setzen
 git config --global user.email "max@beispiel.de"
 
@@ -269,6 +278,13 @@ git config --global core.editor "code --wait"
 # 4. Config anzeigen
 git config --list
 ```
+koffi@koffi-VirtualBox:~$ git config --global user.name "DePatrick"
+koffi@koffi-VirtualBox:~$ git config --global user.email "depatrick22@yahoo.com"
+
+
+koffi@koffi-VirtualBox:~$ git config --list // Pour voir le resultat de ce qui est fait
+![image](https://github.com/user-attachments/assets/9a8e82e9-782c-485b-8bfb-a759cf92eceb)
+
 
 ---
 
