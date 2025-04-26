@@ -1,9 +1,23 @@
 
 # Lösung - Tag 4 -Aufgaben
 
-**Aufgabe 1** : Anzeigen des Inhalts einer Datei und Angabe der Zeilennummern.
+**Aufgabe 1** : Install Git in Linus.
 
-<img width="654" alt="Aufabe1" src="https://github.com/user-attachments/assets/4dcc308a-1c3c-4acd-9092-f867acdf01d3" />
+sudo apt-add-repository ppa:git-core/ppa
+
+sudo apt-get update
+
+sudo apt-get install git
+
+![image](https://github.com/user-attachments/assets/6bf4251d-fd1b-4841-be8d-dd43983a51de)
+
+<img width="532" alt="2025-04-26 10_00_20-Git   Github - OneNote" src="https://github.com/user-attachments/assets/ee1aae54-395a-49cb-84ff-294b9189e282" />
+
+
+Add Konfiguration: Git Config
+![image](https://github.com/user-attachments/assets/b65ac002-2255-4c20-8443-59165124e021)
+
+![Uploading 3.png…]()
 
 
 **Aufgabe 2** : Ändern Sie die Zugriffsrechte von Dateien, so dass sie nur vom Eigentümer gelesen, geschrieben und ausgeführt werden können.
