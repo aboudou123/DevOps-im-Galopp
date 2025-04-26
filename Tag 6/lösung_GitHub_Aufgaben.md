@@ -1,12 +1,10 @@
 
-# Lösung - Tag 4 -Aufgaben
+# Lösung - Tag 6 -Aufgaben
 
 **Aufgabe 1** : Install Git in Linus.
 
 sudo apt-add-repository ppa:git-core/ppa
-
 sudo apt-get update
-
 sudo apt-get install git
 
 ![image](https://github.com/user-attachments/assets/6bf4251d-fd1b-4841-be8d-dd43983a51de)
@@ -34,7 +32,6 @@ Add Konfiguration: Git Config
 ![image](https://github.com/user-attachments/assets/aca16201-5349-4f54-bd11-02a0826785bf)
 
 
-
 **Augabe 4** :eines Verzeichnisses und seines gesamten Inhalts.
 
 ![image](https://github.com/user-attachments/assets/b78b7ef2-b778-4b38-9ff2-992bdac76b6b)
@@ -44,8 +41,5 @@ Add Konfiguration: Git Config
 
 
 
-
-- **12 Wörter insgesamt**
-- **98 Zeichen insgesamt**
 
 
