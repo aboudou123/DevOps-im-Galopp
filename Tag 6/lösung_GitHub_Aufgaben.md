@@ -15,20 +15,25 @@ sudo apt-get install git
 
 
 Add Konfiguration: Git Config
+
 ![image](https://github.com/user-attachments/assets/b65ac002-2255-4c20-8443-59165124e021)
 
-![Uploading 3.png…]()
+<img width="396" alt="3" src="https://github.com/user-attachments/assets/166038a0-2eec-4ba2-b7f8-e712ba690923" />
 
 
-**Aufgabe 2** : Ändern Sie die Zugriffsrechte von Dateien, so dass sie nur vom Eigentümer gelesen, geschrieben und ausgeführt werden können.
 
-<img width="695" alt="Zugriffsrechte" src="https://github.com/user-attachments/assets/e660a411-9383-4621-942c-62ca96c787c2" />
+**Aufgabe 2** : Ein Arbeitsverzeichnis erstellen.
+
+<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/ec8da853-d411-4f05-9278-95c410db74dc" />
 
 
-**Aufgabe 3** : Prüfen Sie die zuletzt von Ihnen ausgeführten 10 Befehle.
 
-<img width="559" alt="History" src="https://github.com/user-attachments/assets/b0d9f5c7-a9a1-49d8-9b5f-8bc7994fa0ae" />
-<img width="551" alt="history_tail_10" src="https://github.com/user-attachments/assets/e3933bcf-7ab9-4a5b-a0b0-69861af692f5" />
+**Aufgabe 3** : git init
+![image](https://github.com/user-attachments/assets/c52f4406-c0f4-4b01-ae57-42896e2e2daf)
+
+
+![image](https://github.com/user-attachments/assets/aca16201-5349-4f54-bd11-02a0826785bf)
+
 
 
 **Augabe 4** : Entfernen eines Verzeichnisses und seines gesamten Inhalts.
