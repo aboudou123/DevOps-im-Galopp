@@ -6,12 +6,21 @@
 
 
 
+2 Delect User
+
+![image](https://github.com/user-attachments/assets/1f55360e-e176-47b6-8ba1-c9448f8517b9)
 
 
 
 
 
 ## 1. **Grundlagen: Dateiberechtigungen in Linux**
+
+![image](https://github.com/user-attachments/assets/70223a1b-b524-46a9-940f-0ee3f74ca0ae)
+
+
+
+
 
 
 **Berechtigungsanzeige** (z.B. mit `ls -l`):
@@ -23,6 +32,21 @@
 | | +------ Owner: read + write + execute
 | +-------- Dateityp: - (Datei) oder d (Verzeichnis)
 ```
+
+![image](https://github.com/user-attachments/assets/7b5207c9-e1dc-4ff1-ab39-e0e7ba098aa0)
+
+
+
+![image](https://github.com/user-attachments/assets/1ed5d8e9-7f35-4df8-8cf1-ca5f83319c42)
+
+
+![image](https://github.com/user-attachments/assets/e856ad57-456f-410e-893a-c4274e555f43)
+
+
+
+
+
+
 
 **Änderung von Rechten**:
 - `chmod` (change mode): Rechte ändern
