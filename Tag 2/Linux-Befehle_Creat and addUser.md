@@ -1,20 +1,18 @@
  **Linux Dateiberechtigungen und Zugriffskontrolllisten (ACLs)**
 
----
+1-Add User
+
+![image](https://github.com/user-attachments/assets/aba019ac-404e-4381-89c8-a6365b373a8e)
+
+
+
+
+
+
+
 
 ## 1. **Grundlagen: Dateiberechtigungen in Linux**
-In Linux hat **jede Datei und jedes Verzeichnis** Berechtigungen, die sich auf drei Gruppen beziehen:
 
-| Kategorie  | Beschreibung |
-|:-----------|:-------------|
-| **Owner**  | Eigentümer der Datei |
-| **Group**  | Benutzer, die zur Gruppenzugehörigkeit der Datei passen |
-| **Others** | Alle anderen Benutzer |
-
-Jede dieser Kategorien hat **drei mögliche Rechte**:
-- **r** = read (lesen)
-- **w** = write (schreiben)
-- **x** = execute (ausführen)
 
 **Berechtigungsanzeige** (z.B. mit `ls -l`):
 ```
