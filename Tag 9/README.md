@@ -19,14 +19,12 @@ mkdir tag{1..30}
 
    * Schreibe ein Bash-Skript `createDirectories.sh`, das bei Ausführung mit drei Argumenten (Verzeichnisname, Startnummer, Endnummer) eine bestimmte Anzahl von Verzeichnissen mit dynamischem Namen erstellt.
    * Beispiel 1: Wird das Skript wie folgt ausgeführt: `./createDirectories.sh day 1 90`, so erstellt es 90 Verzeichnisse mit den Namen `tag1`, `tag2`, `tag3` ... `tag90`.
-   * Beispiel 2: Wird das Skript wie folgt ausgeführt: `./createDirectories.sh Movie 20 50`, so erstellt es 31 Verzeichnisse mit den Namen `Movie20`, `Movie21`, `Movie22` ... `Movie50`.
-
+   
    Hinweis: Du kannst nach Belieben Schleifen oder Befehle (oder beides) verwenden. [Siehe diese Referenz: Bash Scripting For Loop](https://www.geeksforgeeks.org/bash-scripting-for-loop/)
 
 2. **Erstelle ein Skript zur Sicherung deiner Arbeit:**
 
    * Backups sind ein wichtiger Bestandteil der täglichen Arbeit eines DevOps Engineers. Das Video in den Referenzen wird dir helfen zu verstehen, wie ein DevOps Engineer Backups durchführt (es kann anfangs schwierig wirken, aber gib nicht auf – nichts ist unmöglich).
-   * Schau dir [dieses Video](https://youtu.be/aolKiws4Joc) als Anleitung an.
 
 
 3. **Informiere dich über Cron und Crontab zur Automatisierung des Backup-Skripts:**
