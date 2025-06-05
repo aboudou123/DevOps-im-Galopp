@@ -22,13 +22,18 @@
 
 2. **Ein Skript erstellen, um deine gesamte Arbeit zu sichern:**
 
-   * Backups sind ein wichtiger Bestandteil der täglichen Arbeit eines DevOps Engineers. Das Referenzvideo hilft dir zu verstehen, wie ein DevOps Engineer Backups durchführt (es kann zunächst schwierig erscheinen, aber gib nicht auf – nichts ist unmöglich).
+   * Backups sind ein wichtiger Bestandteil der täglichen Arbeit eines DevOps Engineers.
 
    **Antwort:**
+
+<img width="589" alt="backup1" src="https://github.com/user-attachments/assets/57baf200-1b9c-42e5-942e-082af1520a39" />
+
+
 <img width="725" alt="L4" src="https://github.com/user-attachments/assets/3086dc56-21c2-4862-92e7-48d0c79cf876" />
 
 <img width="725" alt="L5" src="https://github.com/user-attachments/assets/1ce9666c-4077-4808-8399-6d3568554998" />
-<img width="589" alt="backup1" src="https://github.com/user-attachments/assets/57baf200-1b9c-42e5-942e-082af1520a39" />
+
+
 
 ## Ein neues Backup wird erstellt, um die Inkohärenzen des alten zu korrigieren.
 
