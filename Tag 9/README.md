@@ -1,13 +1,14 @@
 
 # **Tag 9 Aufgabe: Wiederholung Aufgaben- Linux Shell Scripting für DevOps Engineers mit Benutzerverwaltung**
 
+Wie Sie vielleicht bemerkt haben, habe ich im Rahmen meinesGitHub-Lernprozesses insgesamt 30 Unterverzeichnisse erstellt. Wie habe ich 30 Verzeichnisse erstellt? Manuell, eins nach dem anderen? Mit einem Skript oder einem Befehl? 
 
-Wenn dir aufgefallen ist, dass es im Verzeichnis „2023“ dieses Repositories insgesamt 90 Unterverzeichnisse gibt – was hast du gedacht? Wie habe ich 90 Verzeichnisse erstellt? Manuell, eines nach dem anderen? Mit einem Skript oder einem Befehl?
+Die 30 Verzeichnisse wurden mit einem einzigen Befehl in wenigen Sekunden erstellt:
+In dieser Arbeit habe ich denselben Befehl verwendet, um die Verzeichnisse tag 1 bis tag 90 zu erstellen.
 
-Alle 90 Verzeichnisse wurden innerhalb weniger Sekunden mit einem einfachen Befehl erstellt:
 
 ```bash
-mkdir day{1..90}
+mkdir tag{1..30}
 ```
 
 ---
@@ -17,7 +18,7 @@ mkdir day{1..90}
 1. **Verzeichnisse mit einem Shell-Skript erstellen:**
 
    * Schreibe ein Bash-Skript `createDirectories.sh`, das bei Ausführung mit drei Argumenten (Verzeichnisname, Startnummer, Endnummer) eine bestimmte Anzahl von Verzeichnissen mit dynamischem Namen erstellt.
-   * Beispiel 1: Wird das Skript wie folgt ausgeführt: `./createDirectories.sh day 1 90`, so erstellt es 90 Verzeichnisse mit den Namen `day1`, `day2`, `day3` ... `day90`.
+   * Beispiel 1: Wird das Skript wie folgt ausgeführt: `./createDirectories.sh day 1 90`, so erstellt es 90 Verzeichnisse mit den Namen `tag1`, `tag2`, `tag3` ... `tag90`.
    * Beispiel 2: Wird das Skript wie folgt ausgeführt: `./createDirectories.sh Movie 20 50`, so erstellt es 31 Verzeichnisse mit den Namen `Movie20`, `Movie21`, `Movie22` ... `Movie50`.
 
    Hinweis: Du kannst nach Belieben Schleifen oder Befehle (oder beides) verwenden. [Siehe diese Referenz: Bash Scripting For Loop](https://www.geeksforgeeks.org/bash-scripting-for-loop/)
@@ -27,7 +28,6 @@ mkdir day{1..90}
    * Backups sind ein wichtiger Bestandteil der täglichen Arbeit eines DevOps Engineers. Das Video in den Referenzen wird dir helfen zu verstehen, wie ein DevOps Engineer Backups durchführt (es kann anfangs schwierig wirken, aber gib nicht auf – nichts ist unmöglich).
    * Schau dir [dieses Video](https://youtu.be/aolKiws4Joc) als Anleitung an.
 
-   Bei Fragen kannst du sie im [Discord-Kanal für #90DaysOfDevOps](https://discord.gg/hs3Pmc5F) stellen.
 
 3. **Informiere dich über Cron und Crontab zur Automatisierung des Backup-Skripts:**
 
