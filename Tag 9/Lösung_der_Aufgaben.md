@@ -5,14 +5,18 @@
 1. **Verzeichnisse mit einem Shell-Skript erstellen:**
 
    * Schreibe ein Bash-Skript mit dem Namen `createDirectories.sh`, das bei Ausführung mit drei Argumenten (Verzeichnisname, Startnummer und Endnummer) eine bestimmte Anzahl von Verzeichnissen mit einem dynamischen Namen erstellt.
-   * **Beispiel 1:** Wird das Skript ausgeführt mit `./createDirectories.sh day 1 90`, so erstellt es 90 Verzeichnisse mit den Namen `day1`, `day2`, `day3` ... `day90`.
-   * **Beispiel 2:** Wird das Skript ausgeführt mit `./createDirectories.sh Movie 20 50`, so erstellt es 31 Verzeichnisse mit den Namen `Movie20`, `Movie21`, `Movie22` ... `Movie50`.
+   * **Beispiel 1:** Wird das Skript ausgeführt mit `./createDirectories.sh tag 1  90`, so erstellt es 90 Verzeichnisse mit den Namen `tag 1`, `tag 2`, `tag 3` ... `tag 90`.
+   
 
    **Antwort:**
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%201.png)
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%201-2.png)
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%201-3.png)
+<img width="508" alt="L1" src="https://github.com/user-attachments/assets/733e1665-ab8a-43bd-b78c-258f594803fc" />
+
+<img width="554" alt="L2" src="https://github.com/user-attachments/assets/338b84bf-653a-4c2a-ad2f-88c8725ce86d" />
+
+
+<img width="425" alt="L3" src="https://github.com/user-attachments/assets/3d25178f-161e-4b8e-9463-4798e909cd2d" />
+
 
 ---
 
@@ -21,11 +25,122 @@
    * Backups sind ein wichtiger Bestandteil der täglichen Arbeit eines DevOps Engineers. Das Referenzvideo hilft dir zu verstehen, wie ein DevOps Engineer Backups durchführt (es kann zunächst schwierig erscheinen, aber gib nicht auf – nichts ist unmöglich).
 
    **Antwort:**
+<img width="725" alt="L4" src="https://github.com/user-attachments/assets/3086dc56-21c2-4862-92e7-48d0c79cf876" />
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%202.png)
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%202-1.png)
+<img width="725" alt="L5" src="https://github.com/user-attachments/assets/1ce9666c-4077-4808-8399-6d3568554998" />
+<img width="589" alt="backup1" src="https://github.com/user-attachments/assets/57baf200-1b9c-42e5-942e-082af1520a39" />
+
+
+<img width="495" alt="d2" src="https://github.com/user-attachments/assets/89735d57-3c57-4cf4-9122-35733d387677" />
+
+<img width="525" alt="d3_2" src="https://github.com/user-attachments/assets/03193740-7ec0-48fa-9a60-76856c85f90c" />
+
+
+<img width="668" alt="back8" src="https://github.com/user-attachments/assets/1a273b51-b398-44e5-8d50-af0e17fbf336" />
+
+
+<img width="577" alt="back9" src="https://github.com/user-attachments/assets/102b79c8-f7ff-47ef-8d15-b1afcc11a470" />
+<img width="730" alt="bak5" src="https://github.com/user-attachments/assets/2d1c1327-4cf7-4e26-86b1-8c5c84856166" />
+
+<img width="733" alt="bak6" src="https://github.com/user-attachments/assets/72d74961-66c1-47e9-bf17-8cfed5ce8546" />
+
+<img width="909" alt="back7" src="https://github.com/user-attachments/assets/0ecc621d-d6ce-4b18-9877-fc4bb654efb8" />
+
 
 ---
+
+
+---
+
+## 📝 **1. `createDirectories.sh` – Nur für das Erstellen von Verzeichnissen**
+
+```bash
+#!/bin/bash
+
+# Überprüfen, ob genau drei Argumente übergeben wurden
+if [ "$#" -ne 3 ]; then
+    echo "Benutzung: $0 <Verzeichnisname> <Startnummer> <Endnummer>"
+    exit 1
+fi
+
+# Argumente in Variablen speichern
+prefix=$1
+start=$2
+end=$3
+
+# Überprüfen, ob Start- und Endnummer gültige Zahlen sind
+if ! [[ "$start" =~ ^[0-9]+$ && "$end" =~ ^[0-9]+$ && "$start" -le "$end" ]]; then
+    echo "Fehler: Start- und Endnummer müssen gültige ganze Zahlen sein (Start <= Ende)."
+    exit 1
+fi
+
+# Verzeichnisse erstellen
+for (( i=start; i<=end; i++ ))
+do
+    dirname="${prefix}${i}"
+    mkdir -p "$dirname"
+    echo "Erstellt: $dirname"
+done
+```
+
+---
+
+## 💾 **2. `backupDirectories.sh` – Backup erstellen**
+
+```bash
+#!/bin/bash
+
+# Überprüfen, ob genau drei Argumente übergeben wurden
+if [ "$#" -ne 3 ]; then
+    echo "Benutzung: $0 <Verzeichnisname> <Startnummer> <Endnummer>"
+    exit 1
+fi
+
+# Argumente in Variablen speichern
+prefix=$1
+start=$2
+end=$3
+
+# Backup-Dateiname
+timestamp=$(date +%Y%m%d_%H%M%S)
+backup_name="backup_${prefix}_${start}_to_${end}_${timestamp}.tar.gz"
+
+# Backup erstellen
+echo "Backup wird erstellt: $backup_name"
+tar -czf "$backup_name" ${prefix}{${start}..${end}}
+
+# Erfolgsmeldung
+if [ $? -eq 0 ]; then
+    echo "Backup erfolgreich erstellt: $backup_name"
+else
+    echo "Fehler beim Erstellen des Backups"
+fi
+```
+
+---
+
+## ▶️ So verwendest du die beiden Skripte:
+
+1. Erstelle die Verzeichnisse:
+
+```bash
+./createDirectories.sh day 1 10
+```
+
+2. Danach Backup erstellen:
+
+```bash
+./backupDirectories.sh day 1 10
+```
+
+---
+
+💡 Du kannst beide Skripte ausführbar machen:
+
+```bash
+chmod +x createDirectories.sh backupDirectories.sh
+```
+
 
 3. **Informiere dich über Cron und Crontab, um das Backup-Skript zu automatisieren:**
 
@@ -33,13 +148,82 @@
 
    **Antwort:**
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%203.png)
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day05/image/task%203-1.png)
+
+
+   
+<img width="577" alt="back9" src="https://github.com/user-attachments/assets/d7024c3e-78cb-42b9-bccd-d2bb5969c9d4" />
+
 
 ---
 
-4. **Informiere dich über Benutzerverwaltung:**
+Gute Frage! `crontab -e` ist ein sehr wichtiger Befehl in Ubuntu (und allen Linux-Systemen), vor allem für DevOps-Engineers.
 
-   * Ein Benutzer ist eine Entität in einem Linux-Betriebssystem, die Dateien bearbeiten und verschiedene andere Aufgaben ausführen kann. Jeder Benutzer erhält eine eindeutige ID. Die IDs 0 bis 999 sind für Systembenutzer reserviert. Lokale Benutzer erhalten IDs ab 1000.
-   * Erstelle **zwei Benutzer** und gib ihre **Benutzernamen** aus.
+---
+
+## 🕒 Was ist `crontab`?
+
+**`cron`** ist ein Dienst in Linux, der automatisch **wiederkehrende Aufgaben (sog. "Cronjobs")** zu bestimmten Zeiten ausführt.
+
+**`crontab`** (cron table) ist die Datei, in der du diese Aufgaben (Jobs) einträgst.
+
+---
+
+## 🛠️ Was macht `crontab -e`?
+
+Der Befehl:
+
+```bash
+crontab -e
+```
+
+bedeutet:
+
+> „Bearbeite die Crontab-Datei für **meinen Benutzer**.“
+
+Damit öffnest du die persönliche Cron-Tabelle deines Benutzers in einem Texteditor (z. B. `nano` oder `vim`), um geplante Aufgaben einzutragen.
+
+---
+
+## 📋 Beispiel: Täglich ein Backup um 22:00 Uhr ausführen
+
+Wenn du z. B. möchtest, dass dein Skript `backup.sh` jeden Abend um 22:00 Uhr ausgeführt wird:
+
+1. Tippe im Terminal:
+
+   ```bash
+   crontab -e
+   ```
+
+2. Füge am Ende diese Zeile ein:
+
+   ```bash
+   0 22 * * * /home/koffi/backup/backup.sh tag 1 90
+   ```
+
+   🟢 Erklärung:
+
+   * `0 22` → Stunde 22:00 Uhr
+   * `* * *` → jeden Tag, jeden Monat, jeden Wochentag
+   * Pfad zum Skript + Argumente
+
+---
+
+## 🔍 Andere nützliche Befehle
+
+* `crontab -l` → Zeigt deine aktuelle Crontab an
+* `crontab -r` → **Löscht** deine Crontab (Achtung!)
+
+
+## ⚠️ Wichtiger Hinweis
+
+* Stelle sicher, dass dein Skript **ausführbar** ist:
+
+  ```bash
+  chmod +x /home/koffi/backup/backup.sh
+  ```
+* Verwende in der Crontab immer **absolute Pfade**.
+
+---
+
+
 
