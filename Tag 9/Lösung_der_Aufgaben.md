@@ -32,10 +32,69 @@
 
 ## Ein neues Backup wird erstellt, um die Inkohärenzen des alten zu korrigieren.
 
-Super! Du bist im richtigen Verzeichnis und hast die Datei `backup.sh` mit `vim` geöffnet.
+Ich bin  im richtigen Verzeichnis und habe die Datei `backup.sh` mit `vim` geöffnet.
 
-Jetzt zeige ich dir, wie du **eine Variable** definierst, um dein Backup z. B. immer im Ordner `~/backup` zu speichern – also in dem Ordner, in dem du gerade bist – und wie du dann das Backup darin erstellst.
+Perfekt – du willst also:
 
+1. **Die alte Backup-Datei löschen**
+2. **Ein sauberes neues Backup erstellen**
+
+Hier ist genau, wie du das Schritt für Schritt machst:
+
+---
+
+## 🔥 1. Alte Backup-Dateien löschen
+
+Wenn du **alle alten Backup-Dateien** löschen willst (z. B. `backup_day_1_to_90_*.tar.gz`), nutze diesen Befehl:
+
+
+<img width="808" alt="bc" src="https://github.com/user-attachments/assets/44ebf7ae-1e20-4ed3-b55a-ddf22163883b" />
+
+
+```bash
+rm backup_day_1_to_90_*.tar.gz
+```
+
+```bash
+rm *.tar.gz
+```
+
+💡 **Tipp:**  `ls` vorher prüfen, was gelöscht wird:
+
+```bash
+ls *.tar.gz
+```
+
+---
+
+## 🧼 2. Neues Backup erstellen
+
+```bash
+./backup.sh day 1 90
+```
+
+Ergebnis:
+
+```bash
+📦 Erstelle Backup-Datei: backup_day_1_to_90_20250605_172312.tar.gz
+✅ Backup erfolgreich erstellt: backup_day_1_to_90_20250605_172312.tar.gz
+```
+
+---
+
+## ❓ Was tun, wenn du auch die Verzeichnisse neu anlegen willst?
+
+Wenn du **alles von Null starten** willst:
+
+```bash
+rm -r day{1..90}        # Alle day-Verzeichnisse löschen
+./createDirectories.sh tag 1 90   # Neue Verzeichnisse erstellen
+./backup.sh tag 1 90             # Neues Backup erstellen
+```
+
+---
+
+Erstelle eine **Variable** `BACKUP_DIR` für den Zielordner
 ---
 
 ## 🧠 Ziel
@@ -46,8 +105,6 @@ Jetzt zeige ich dir, wie du **eine Variable** definierst, um dein Backup z. B.
 ---
 
 ## 💾 code für `backup.sh`
-
-Füge den folgenden vollständigen Code in deine `backup.sh` ein (wenn du bereits was hast, kannst du es anpassen):
 
 ```bash
 #!/bin/bash
@@ -124,7 +181,6 @@ Wenn du alles richtig gemacht hast, wird das Backup z. B. in `/home/koffi/back
 
 ---
 
-
 <img width="495" alt="d2" src="https://github.com/user-attachments/assets/89735d57-3c57-4cf4-9122-35733d387677" />
 
 <img width="525" alt="d3_2" src="https://github.com/user-attachments/assets/03193740-7ec0-48fa-9a60-76856c85f90c" />
@@ -143,10 +199,9 @@ Wenn du alles richtig gemacht hast, wird das Backup z. B. in `/home/koffi/back
 
 ---
 
-
 ---
 
-## 📝 **1. `createDirectories.sh` – Nur für das Erstellen von Verzeichnissen**
+## 📝 **1. `buckup.sh` – Nur für das Erstellen von Verzeichnissen**
 
 ```bash
 #!/bin/bash
@@ -212,6 +267,11 @@ fi
 ```
 
 ---
+
+
+<img width="733" alt="bak6" src="https://github.com/user-attachments/assets/412a8c01-6233-4389-997d-bdf11e272a47" />
+
+
 
 ## ▶️ So verwendest du die beiden Skripte:
 
