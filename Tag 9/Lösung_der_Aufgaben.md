@@ -30,6 +30,100 @@
 <img width="725" alt="L5" src="https://github.com/user-attachments/assets/1ce9666c-4077-4808-8399-6d3568554998" />
 <img width="589" alt="backup1" src="https://github.com/user-attachments/assets/57baf200-1b9c-42e5-942e-082af1520a39" />
 
+## Ein neues Backup wird erstellt, um die Inkohärenzen des alten zu korrigieren.
+
+Super! Du bist im richtigen Verzeichnis und hast die Datei `backup.sh` mit `vim` geöffnet.
+
+Jetzt zeige ich dir, wie du **eine Variable** definierst, um dein Backup z. B. immer im Ordner `~/backup` zu speichern – also in dem Ordner, in dem du gerade bist – und wie du dann das Backup darin erstellst.
+
+---
+
+## 🧠 Ziel
+
+* Erstelle eine **Variable** `BACKUP_DIR` für den Zielordner
+* Erstelle das Backup **in diesem Verzeichnis**
+
+---
+
+## 💾 code für `backup.sh`
+
+Füge den folgenden vollständigen Code in deine `backup.sh` ein (wenn du bereits was hast, kannst du es anpassen):
+
+```bash
+#!/bin/bash
+
+# Überprüfen, ob genau drei Argumente übergeben wurden
+if [ "$#" -ne 3 ]; then
+    echo "Benutzung: $0 <Verzeichnisname> <Startnummer> <Endnummer>"
+    exit 1
+fi
+
+# Argumente
+prefix=$1
+start=$2
+end=$3
+
+# 🔧 Zielverzeichnis für Backup festlegen
+BACKUP_DIR="/home/koffi/backup"  # → oder einfach: BACKUP_DIR="$(pwd)" für aktuelles Verzeichnis
+
+# Backup-Dateiname mit Zeitstempel
+timestamp=$(date +%Y%m%d_%H%M%S)
+backup_name="backup_${prefix}_${start}_to_${end}_${timestamp}.tar.gz"
+backup_path="${BACKUP_DIR}/${backup_name}"
+
+# Gültige Verzeichnisse sammeln
+dirs=()
+for (( i=start; i<=end; i++ )); do
+    dir="${prefix}${i}"
+    if [ -d "$HOME/$dir" ]; then
+        dirs+=("$HOME/$dir")
+    else
+        echo "⚠️  Hinweis: Verzeichnis '$HOME/$dir' existiert nicht und wird übersprungen."
+    fi
+done
+
+# Prüfen, ob Verzeichnisse vorhanden sind
+if [ ${#dirs[@]} -eq 0 ]; then
+    echo "❌ Keine gültigen Verzeichnisse gefunden. Backup wird abgebrochen."
+    exit 1
+fi
+
+# Backup erstellen
+echo "📦 Erstelle Backup-Datei: $backup_path"
+tar -czf "$backup_path" "${dirs[@]}"
+
+# Erfolgsmeldung
+if [ $? -eq 0 ]; then
+    echo "✅ Backup erfolgreich erstellt: $backup_path"
+else
+    echo "❌ Fehler beim Erstellen des Backups"
+fi
+```
+
+---
+
+## ✅ Ausführen
+
+Speichere die Datei in `vim`:
+
+* `ESC`, dann `:wq` und Enter
+
+Dann mach sie ausführbar (falls nicht bereits geschehen):
+
+```bash
+chmod +x backup.sh
+```
+
+Jetzt kannst du das Backup starten, z. B.:
+
+```bash
+./backup.sh tag 1 90
+```
+
+Wenn du alles richtig gemacht hast, wird das Backup z. B. in `/home/koffi/backup/backup_tag_1_to_90_20250605_174500.tar.gz` gespeichert.
+
+---
+
 
 <img width="495" alt="d2" src="https://github.com/user-attachments/assets/89735d57-3c57-4cf4-9122-35733d387677" />
 
