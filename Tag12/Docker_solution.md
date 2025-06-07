@@ -1,12 +1,14 @@
-# Day 17 Answers: Docker Project for DevOps Engineers
 
-### You people are doing just amazing in **#90daysofdevops**. Today's challenge is so special because you are going to do a DevOps project with Docker. Are you excited? 😍
+# Tag 12 Antworten: Docker-Projekt für DevOps-Ingenieure
+
+### Ihr macht das einfach großartig bei **#30DevOps-im-Galopp**. Die heutige Herausforderung ist etwas ganz Besonderes, denn ihr werdet ein DevOps-Projekt mit Docker durchführen. Seid ihr aufgeregt? 😍
 
 # Dockerfile
 
-Docker is a tool that makes it easy to run applications in containers. Containers are like small packages that hold everything an application needs to run. To create these containers, developers use something called a Dockerfile.
+Docker ist ein Tool, das es einfach macht, Anwendungen in Containern auszuführen. Container sind wie kleine Pakete, die alles enthalten, was eine Anwendung zum Laufen braucht. Um diese Container zu erstellen, verwenden Entwickler etwas, das man ein Dockerfile nennt.
 
-A Dockerfile is like a set of instructions for making a container. It tells Docker what base image to use, what commands to run, and what files to include. For example, if you were making a container for a website, the Dockerfile might tell Docker to use an official web server image, copy the files for your website into the container, and start the web server when the container starts.
+Ein Dockerfile ist wie eine Reihe von Anweisungen zur Erstellung eines Containers. Es sagt Docker, welches Basis-Image verwendet werden soll, welche Befehle auszuführen sind und welche Dateien enthalten sein sollen. Wenn man zum Beispiel einen Container für eine Website erstellen würde, könnte das Dockerfile Docker anweisen, ein offizielles Webserver-Image zu verwenden, die Dateien der Website in den Container zu kopieren und den Webserver zu starten, wenn der Container gestartet wird.
+
 
 For more about Dockerfile, visit [here](https://rushikesh-mashidkar.hashnode.dev/dockerfile-docker-compose-swarm-and-volumes).
 
