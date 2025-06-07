@@ -60,8 +60,8 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
    ```bash
    git add main.py
    ```
-<img width="734" alt="dd" src="https://github.com/user-attachments/assets/54272914-334f-48a6-8cda-03929d49c19c" />
-<img width="935" alt="dd1" src="https://github.com/user-attachments/assets/3bbbf7c3-875d-4856-84d3-5edb49e00cc4" />
+<img width="663" alt="Desk_2" src="https://github.com/user-attachments/assets/66ca1d02-e6f8-4cff-8ba8-eb47cd1af444" />
+
 
 
 3. Du dokumentierst sie:
@@ -69,6 +69,10 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
    ```bash
    git commit -m "Funktion zur Begrüßung hinzugefügt"
    ```
+<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/4a39379e-dc19-4620-8b3a-7c2176d5d68b" />
+
+
+
 <img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/3975949b-3edc-4b9b-a8c0-d48b86b8db8b" />
 
 ---
@@ -150,6 +154,7 @@ Möchtest du das?
 
 
 
+<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
 
 
 
@@ -203,7 +208,9 @@ Möchtest du das?
 
  - Versteckter .git-Ordner
 
+<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/a11273f5-bb68-4136-81d9-3d7c1348d1b3" />
 
+<img width="746" alt="Desk_7" src="https://github.com/user-attachments/assets/d061272d-ef3e-4937-ac5a-e9fed9afaffd" />
 
 7 )Änderungen nachverfolgen
 
@@ -229,6 +236,19 @@ Möchtest du das?
 10 - Inhalt von Commti anzeigen (Git Show)
 
 11 - Head(Kopf)
+
+<img width="720" alt="Desk_8" src="https://github.com/user-attachments/assets/493e9a6a-93d3-4a89-9226-24a90f26d02a" />
+
+
+
+<img width="737" alt="Desk-5" src="https://github.com/user-attachments/assets/2159ae69-fed4-4846-91c1-b09ccf432e39" />
+
+
+
+
+
+
+
 
 
 
