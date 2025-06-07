@@ -50,16 +50,16 @@ Ein Dockerfile ist wie eine Reihe von Anweisungen zur Erstellung eines Container
 - **2. Dockerfile erstellen**
       - Erstellen Sie eine Datei namens „Dockerfile“ im selben Verzeichnis und fügen Sie den folgenden Inhalt hinzu:
 
-      **Antwort**
+  **Antwort**
 
-      ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/5_build_the_docker_image.png)
+   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/5_build_the_docker_image.png)
 
     Ausführen des Containers
       - Um den Container zu starten, verwenden Sie den folgenden Befehl:
 
   **Antwort**
-
-      ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/6_Run_the_Container.png)
+  
+  ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/6_Run_the_Container.png)
 
 **3. Überprüfen Sie, ob die Anwendung wie erwartet funktioniert, indem Sie in einem Webbrowser auf sie zugreifen**
    - Öffnen Sie Ihren Webbrowser und navigieren Sie zu `http://localhost:5000`. Sie sollten die Meldung „Hello, World!“ sehen.
