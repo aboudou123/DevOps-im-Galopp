@@ -19,20 +19,22 @@ Ein Dockerfile ist wie eine Reihe von Anweisungen zur Erstellung eines Container
 
    
    **Antwort**
-[image(https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/1_Create_a_new_directory.png)
+   
+![image
+(https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/1_Create_a_new_directory.png)
 
       - App.py' und fügen Sie den folgenden Inhalt hinzu:
 
       
    **Antwort**
-
-      ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/2_app_py.png)
+   
+![image] (https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/2_app_py.png)
 
        - Eine Datei mit dem Namen `requirements.txt` erstellen und den folgenden Inhalt hinzufügen:
 
    **Antwort**
 
-      ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/3_Create_a_requirements_file.png)
+![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/3_Create_a_requirements_file.png)
 
    - **2. Dockerfile erstellen**
       - Erstellen Sie eine Datei namens „Dockerfile“ im selben Verzeichnis und fügen Sie den folgenden Inhalt hinzu:
