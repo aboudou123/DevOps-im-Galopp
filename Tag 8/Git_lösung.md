@@ -56,6 +56,13 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
 
 
 
+<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
+
+
+
+<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
+
+
 3. Du dokumentierst sie:
 
    ```bash
@@ -118,75 +125,8 @@ xcode-select --install
 
 ---
 
-### **Linux-Installation**
 
-**Beispiel für Ubuntu/Debian:**
-
-```bash
-sudo apt update
-sudo apt install git
-git --version
-```
-
-**Beispiel für Fedora:**
-
-```bash
-sudo dnf install git
-```
-
----
-
-Wenn du möchtest, erkläre ich dir als Nächstes:
-
-* wie du dein erstes Repository erstellst
-* wie Branches funktionieren
-* oder wie man mit GitHub arbeitet.
-
-Möchtest du das?
-
-
-
-<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1 - Einführung
-
-
-
-2 - Erste Schritte mit Git
-
-- Was ist Git
-- Wie Git funktioniert
-- Git-Alternativen
-
-3 - Git-Installation
-
-
-- Mac OS-Installation
-- Windows-Installation
-- Linux-Installation
-
-4 - Git-Befehle
-
- - Git-Befehle
- - Git-Hilfe
- - Hinzufügen von Konfigurationen (Git Config)
-
-
-5 - erstes Git-Repository
+### **5 - erstes Git-Repository**
 
  - Was ist ein Git-Repository
 
@@ -204,7 +144,7 @@ Möchtest du das?
 
 <img width="746" alt="Desk_7" src="https://github.com/user-attachments/assets/d061272d-ef3e-4937-ac5a-e9fed9afaffd" />
 
-7 )Änderungen nachverfolgen
+### **6 Änderungen nachverfolgen**
 
 
 1 - Einführung
@@ -237,14 +177,7 @@ Möchtest du das?
 
 
 
-
-
-
-
-
-
-
-7 - Entfernte Repositories
+### **7 - Entfernte Repositories**
 
 1 - Intro
 
@@ -263,123 +196,3 @@ Möchtest du das?
 8 - Ssh-Schlüssel konfigurieren
 
 9 - Push To Remote Repo
-
-
-
-
-
-
-
-
-Le cours sur le thème DevOps s'adresse principalement à :
-
-Développeurs : qui veulent apprendre à déployer, tester, et automatiser leurs applications.
-
-Administrateurs systèmes (SysAdmins) : qui veulent automatiser l'infrastructure et gérer des environnements cloud.
-
-Ingénieurs Cloud / Infrastructure : pour mieux intégrer développement et exploitation (AWS, Azure, etc.).
-
-Testeurs / QA Engineers : pour automatiser les tests et les déploiements continus.
-
-Chefs de projet IT / Product Owners : pour comprendre les pratiques agiles, CI/CD, et les outils DevOps.
-
-Étudiants en informatique : qui souhaitent élargir leurs compétences pratiques en ingénierie moderne.
-
-Personnes en reconversion professionnelle : voulant passer vers un métier plus technique et recherché.
-
-En résumé :
-👉 Toute personne qui veut combiner développement, opérations et automatisation dans des projets logiciels.
-
-Veux-tu aussi que je te donne les compétences de base qu'il faut pour bien démarrer en DevOps ? 🚀
-(Ça pourrait t'aider à voir si tu es prêt ou ce qu’il faudrait apprendre avant !)
-
-
-
-1.
-🚀 Plongez dans l’univers du DevOps et découvrez comment automatiser, déployer et sécuriser vos projets IT avec les outils et méthodes des leaders du secteur.
-
-2.
-⚙️ Vous voulez maîtriser l’intégration continue, le déploiement rapide et la collaboration entre développeurs et opérations ? Ce cours DevOps est fait pour vous !
-
-3.
-🌟 Apprenez à transformer vos compétences techniques et à construire des infrastructures modernes, résilientes et évolutives grâce aux pratiques DevOps.
-
-4.
-📈 Optimisez vos projets grâce à une approche DevOps : automatisation, cloud, CI/CD... Un cours pratique et accessible, pour tous ceux qui veulent évoluer dans l’IT d’aujourd’hui.
-
-5.
-💡 Du développement à la production : devenez acteur de la révolution DevOps et propulsez vos projets avec des workflows agiles et performants.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Aufgabe 1: Anzeigen des Inhalts einer Datei und Angabe der Zeilennummern.
-
-
-
-Aufgabe 2: Ändern Sie die Zugriffsrechte von Dateien, so dass sie nur vom Eigentümer gelesen, geschrieben und ausgeführt werden können.
-
-
-
-Aufgabe 3: Prüfen Sie die zuletzt von Ihnen ausgeführten 10 Befehle.
-
-
-
-Augabe 4: Entfernen eines Verzeichnisses und seines gesamten Inhalts.
-
-
-
-Augabe 5: Erstellen Sie eine Datei `koffit.txt`, fügen Sie den Inhalt hinzu (eine Frucht pro Zeile), und zeigen Sie den Inhalt an.
-
-
-
-
-Augabe 6: Fügen Sie den Inhalt der Datei `Galopp.txt` hinzu (eine in jeder Zeile) - Apfel, Mango, Banane, Kirsche, Kiwi, Orange, Guave. Fügen Sie dann „Ananas“ an das Ende der Datei an..
-
-
-
-Augabe 7: Zeigen Sie die ersten drei Früchte aus der Datei in umgekehrter Reihenfolge.
-
-
-
-
-Augabe 8: Zeigen Sie die untersten drei Früchte aus der Datei und sortieren Sie sie dann alphabetisch.
-
-
-
-
-Augabe 9: Erstellen Sie eine weitere Datei `flagge.txt`, fügen Sie den Inhalt hinzu (eine Farbe pro Zeile), und zeigen Sie den Inhalt an..
-
-
-
-
-Augabe 10: Fügen Sie den Inhalt der Datei `flagge.txt` hinzu (eine in jeder Zeile) - Rot, Rosa, Weiß, Schwarz, Blau, Orange, Lila, Grau. Dann fügen Sie „Gelb“ am Anfang der Datei ein..
-
-
-
-
-Augabe 11: Finde die Zeilen, die `fruits.txt` und `Colors.txt` gemeinsam haben, und zeige sie an.
-
-
-
-
-Augabe 12: Zählen Sie die Anzahl der Zeilen, Wörter und Zeichen in `fruits.txt` und `flagge.txt`..
-
-
-
-
