@@ -1,7 +1,10 @@
 
 # How To Create A Data Pipeline Automation
 
-Créer une **automatisation d’un pipeline de données** signifie concevoir un processus qui collecte, transforme et stocke les données sans intervention humaine manuelle. Voici une approche structurée, claire et pratique pour concevoir ce pipeline automatisé.
+Créer une **automatisation d’un pipeline de données** signifie concevoir un processus qui collecte, transforme et stocke les données sans intervention humaine manuelle. Voici une approche structurée, claire et pratique pour concevoir ce pipeline automatisé. 
+
+
+Plus d'infos : https://estuary.dev/blog/data-pipeline-automation/
 
 ---
 
