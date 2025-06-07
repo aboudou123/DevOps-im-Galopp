@@ -124,6 +124,115 @@ xcode-select --install
 ---
 
 
+Perfekt! Hier ist eine strukturierte und konkrete Erklärung zu deinem Punkt **5 – erstes Git-Repository**, mit praktischen Beispielen, die du direkt in Git Bash ausprobieren kannst:
+
+---
+
+## 🧱 **Was ist ein Git-Repository?**
+
+Ein **Git-Repository** (kurz: *Repo*) ist ein Verzeichnis, das alle Dateien deines Projekts sowie den vollständigen **Verlauf aller Änderungen** enthält.
+Es besteht aus zwei Teilen:
+
+<img width="668" alt="Desk_3" src="https://github.com/user-attachments/assets/f52ae4ce-31f1-4494-a5c8-36aef0462abc" />
+
+
+* dem **Arbeitsverzeichnis** (*Working Directory*)
+* und einem versteckten Ordner `.git`, in dem Git alles verwaltet.
+
+---
+
+## 📁 **Arbeitsverzeichnis und `git init`**
+
+Das **Arbeitsverzeichnis** ist der Ort, an dem du deine Projektdateien speicherst (z. B. `.py`, `.html`, `.js`).
+
+### 🛠️ Beispiel: Neues Projektverzeichnis erstellen
+
+```bash
+mkdir mein-erstes-projekt
+cd mein-erstes-projekt
+```
+<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/dfa3ef49-c8ea-4e6e-a322-f1ac208769c2" />
+
+---
+
+## 🔄 **Git-Repository initialisieren (`git init`)**
+
+```bash
+git init
+```
+
+<img width="668" alt="Desk_3" src="https://github.com/user-attachments/assets/993aad82-95c0-4a59-a5af-555d8810fa26" />
+
+
+🔍 Ergebnis:
+
+* Git erstellt einen versteckten Ordner `.git`
+* Das Verzeichnis wird zu einem **lokalen Git-Repository**
+
+Du kannst prüfen:
+
+```bash
+ls -a
+```
+
+Ausgabe:
+
+
+
+<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/b834ee96-e60e-4e56-a956-edabbd10e904" />
+
+
+```
+.  ..  .git
+```
+
+---
+
+## ⚙️ **Globale vs. lokale Konfiguration**
+
+Git speichert deine Benutzerinformationen, z. B. Name und E-Mail-Adresse, damit jede Änderung einem Autor zugeordnet werden kann.
+
+### 🌍 Globale Konfiguration (gilt für alle Repos):
+
+```bash
+git config --global user.name "Max Mustermann"
+git config --global user.email "max@example.com"
+```
+
+### 📦 Lokale Konfiguration (gilt nur für dieses Repo):
+
+```bash
+git config user.name "Projekt Max"
+git config user.email "projekt@example.com"
+```
+
+
+<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/a6287417-e7e5-411e-9a14-fe42c571b417" />
+
+
+
+### 🔍 Aktuelle Konfiguration anzeigen:
+
+```bash
+git config --list
+```
+
+---
+
+## ✅ Zusammenfassung – erster Ablauf
+
+| Schritt                | Befehl                                | Erklärung                    |
+| ---------------------- | ------------------------------------- | ---------------------------- |
+| Ordner erstellen       | `mkdir mein-erstes-projekt`           | Projektverzeichnis anlegen   |
+| In den Ordner wechseln | `cd mein-erstes-projekt`              | Ins Arbeitsverzeichnis gehen |
+| Git initialisieren     | `git init`                            | Repository starten           |
+| Benutzer global setzen | `git config --global user.name "..."` | Dein Git-Benutzername        |
+| Benutzer lokal setzen  | `git config user.name "..."`          | Gilt nur für aktuelles Repo  |
+| Konfiguration anzeigen | `git config --list`                   | Alle aktiven Einstellungen   |
+
+---
+
+
 ### **5 - erstes Git-Repository**
 
  - Was ist ein Git-Repository
