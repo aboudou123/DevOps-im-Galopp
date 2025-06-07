@@ -64,10 +64,10 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
 <img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
 
 
-3. Du dokumentierst sie:
+3. git commit:
 
    ```bash
-   git commit -m "Funktion zur Begrüßung hinzugefügt"
+   git commit -m 
    ```
 <img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/4a39379e-dc19-4620-8b3a-7c2176d5d68b" />
 
@@ -89,7 +89,7 @@ Ein Team entscheidet sich für Mercurial, weil es einfacher ist – jedoch hat G
 
 ---
 
-## **3 – Git-Installation**
+## **4 – Git-Installation**
 
 ### **Mac OS-Installation**
 
@@ -128,18 +128,22 @@ Perfekt! Hier ist eine strukturierte und konkrete Erklärung zu deinem Punkt **5
 
 ---
 
-## 🧱 **Was ist ein Git-Repository?**
+## 🧱 5 **Was ist ein Git-Repository?**
+
+Was ist ein Git-Repository?
 
 Ein **Git-Repository** (kurz: *Repo*) ist ein Verzeichnis, das alle Dateien deines Projekts sowie den vollständigen **Verlauf aller Änderungen** enthält.
 Es besteht aus zwei Teilen:
 
 <img width="668" alt="Desk_3" src="https://github.com/user-attachments/assets/f52ae4ce-31f1-4494-a5c8-36aef0462abc" />
 
+**Arbeitsverzeichnis und Git Init
 
 * dem **Arbeitsverzeichnis** (*Working Directory*)
 * und einem versteckten Ordner `.git`, in dem Git alles verwaltet.
 
 ---
+**Arbeitsverzeichnis mit Mkdir erstellen
 
 ## 📁 **Arbeitsverzeichnis und `git init`**
 
@@ -177,9 +181,11 @@ ls -a
 
 Ausgabe:
 
+<img width="737" alt="Desk-5" src="https://github.com/user-attachments/assets/2159ae69-fed4-4846-91c1-b09ccf432e39" />
 
 
-<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/b834ee96-e60e-4e56-a956-edabbd10e904" />
+<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/a11273f5-bb68-4136-81d9-3d7c1348d1b3" />
+
 
 
 ```
@@ -187,6 +193,8 @@ Ausgabe:
 ```
 
 ---
+
+
 
 ## ⚙️ **Globale vs. lokale Konfiguration**
 
@@ -231,29 +239,6 @@ git config --list
 | Konfiguration anzeigen | `git config --list`                   | Alle aktiven Einstellungen   |
 
 ---
-
-
-### **5 - erstes Git-Repository**
-
- - Was ist ein Git-Repository
-
- - Arbeitsverzeichnis und Git Init
-
- - Arbeitsverzeichnis mit Mkdir erstellen
-
- - Git-Repository initialisieren (Git Init)
-
- - Arbeiten mit globaler und lokaler Konfiguration
-
- - Versteckter .git-Ordner
-
-
-
-<img width="737" alt="Desk-5" src="https://github.com/user-attachments/assets/2159ae69-fed4-4846-91c1-b09ccf432e39" />
-
-
-
-<img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/a11273f5-bb68-4136-81d9-3d7c1348d1b3" />
 
 
 ### **6 Änderungen nachverfolgen**
