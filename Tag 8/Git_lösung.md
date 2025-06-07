@@ -59,10 +59,6 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
 <img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
 
 
-
-<img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
-
-
 3. Du dokumentierst sie:
 
    ```bash
