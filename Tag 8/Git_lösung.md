@@ -56,6 +56,11 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
 
 
 
+<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/3975949b-3edc-4b9b-a8c0-d48b86b8db8b" />
+
+
+
+
 <img width="665" alt="Desk_4" src="https://github.com/user-attachments/assets/85ff1ace-8fba-4fca-876c-172e9e299a94" />
 
 
@@ -66,9 +71,6 @@ Git arbeitet lokal – jede Kopie eines Repositories enthält die komplette Hist
    ```
 <img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/4a39379e-dc19-4620-8b3a-7c2176d5d68b" />
 
-
-
-<img width="763" alt="Creer et effacer-MINGW64__c_Users_patri" src="https://github.com/user-attachments/assets/3975949b-3edc-4b9b-a8c0-d48b86b8db8b" />
 
 ---
 
