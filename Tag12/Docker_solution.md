@@ -19,8 +19,7 @@ Ein Dockerfile ist wie eine Reihe von Anweisungen zur Erstellung eines Container
 
    
    **Antwort**
-
-      ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/1_Create_a_new_directory.png)
+[image(https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/1_Create_a_new_directory.png)
 
       - App.py' und fügen Sie den folgenden Inhalt hinzu:
 
