@@ -1,16 +1,5 @@
 
-
-
-Creat a working diretory
-
-
-
-Ein Arbeitsverzeichnis erstellen
-
-
-
-
-
+Ein Arbeitsverzeichnis erstell
 
 # Lösung - Tag 4 -Aufgaben
 
