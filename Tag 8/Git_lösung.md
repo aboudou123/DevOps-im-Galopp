@@ -247,9 +247,14 @@ git config --list
 
  - Versteckter .git-Ordner
 
+
+
+<img width="737" alt="Desk-5" src="https://github.com/user-attachments/assets/2159ae69-fed4-4846-91c1-b09ccf432e39" />
+
+
+
 <img width="701" alt="Desk_6" src="https://github.com/user-attachments/assets/a11273f5-bb68-4136-81d9-3d7c1348d1b3" />
 
-<img width="746" alt="Desk_7" src="https://github.com/user-attachments/assets/d061272d-ef3e-4937-ac5a-e9fed9afaffd" />
 
 ### **6 Änderungen nachverfolgen**
 
@@ -279,9 +284,7 @@ git config --list
 <img width="720" alt="Desk_8" src="https://github.com/user-attachments/assets/493e9a6a-93d3-4a89-9226-24a90f26d02a" />
 
 
-
-<img width="737" alt="Desk-5" src="https://github.com/user-attachments/assets/2159ae69-fed4-4846-91c1-b09ccf432e39" />
-
+<img width="746" alt="Desk_7" src="https://github.com/user-attachments/assets/d061272d-ef3e-4937-ac5a-e9fed9afaffd" />
 
 
 ### **7 - Entfernte Repositories**
