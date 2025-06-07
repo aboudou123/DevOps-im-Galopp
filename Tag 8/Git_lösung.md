@@ -26,7 +26,10 @@ Stell dir vor, du arbeitest mit 3 Kollegen an einem Softwareprojekt. Jeder kann 
 Git ist ein Tool, mit dem man Quellcode-Versionen verwalten kann. Es merkt sich jede Änderung, die du an Dateien machst, und speichert sogenannte *Snapshots* deines Projekts.
 
 **Beispiel:**
-Du erstellst ein Python-Projekt mit einer Datei `main.py`. Mit Git kannst du jede Änderung (z. B. neue Funktionen oder Fehlerbehebungen) dokumentieren und verwalten:
+Du erstellst ein Python-Projekt mit einer Datei `main.py`. 
+
+Mit Git kannst du jede Änderung (z. B. neue Funktionen oder Fehlerbehebungen) dokumentieren und verwalten:
+
 <img width="612" alt="Desk_1" src="https://github.com/user-attachments/assets/59df3479-cd92-4cc0-9625-be46a630b47a" />
 
 ```bash
