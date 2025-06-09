@@ -1,54 +1,53 @@
-##🔧Projektübersicht: "Kubernetes Bookstore ##
+ **praxisnahes Kubernetes-Projekt**, bei dem du lernst, **eine Container-Plattform lokal mit Vanilla Kubernetes** aufzusetzen und sie anschließend **in eine Cloud-Umgebung zu integrieren** (z. B. GKE – Google Kubernetes Engine). Du arbeitest dabei mit Ubuntu.
 
-Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + DB) zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Cluster.
+---
 
-🚀 Projektstruktur in zwei Phasen
+## 🔧 **Projektübersicht: "Kubernetes Bookstore"**
 
-🧱 Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)
-Cluster lokal einrichten (Minikube oder Kind)
+Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + DB) zuerst auf einem **lokalen Kubernetes-Cluster**, dann auf einem **Cloud-Kubernetes-Cluster**.
 
-Containerisierte Anwendung bauen & deployen
+---
 
-Netzwerk (Services, Ingress) einrichten
+## 🚀 **Projektstruktur in zwei Phasen**
 
-Persistent Volumes & ConfigMaps einsetzen
+### 🧱 **Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)**
 
-Monitoring mit Prometheus + Grafana (optional)
+1. **Cluster lokal einrichten (Minikube oder Kind)**
+2. **Containerisierte Anwendung bauen & deployen**
+3. **Netzwerk (Services, Ingress) einrichten**
+4. **Persistent Volumes & ConfigMaps einsetzen**
+5. **Monitoring mit Prometheus + Grafana (optional)**
 
-☁️ Phase 2: Cloud-Integration (z. B. GKE, EKS oder AKS)
-Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)
+---
 
-CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
+### ☁️ **Phase 2: Cloud-Integration (z. B. GKE, EKS oder AKS)**
 
-Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)
+6. **Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
+7. **CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)**
+8. **Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)**
+9. **Logging und Monitoring in der Cloud**
+10. **Zugriff absichern (RBAC, Network Policies)**
 
-Logging und Monitoring in der Cloud
+---
 
-Zugriff absichern (RBAC, Network Policies)
+## 📦 Technologien:
 
-📦 Technologien:
-Ubuntu 22.04+
+* Ubuntu 22.04+
+* Kubernetes (Minikube oder Kind lokal, GKE später)
+* Docker
+* kubectl, helm
+* Git
+* GitHub Actions (CI/CD)
+* YAML (für Kubernetes Manifeste)
+* (Optional: Prometheus, Grafana, Vault)
 
-Kubernetes (Minikube oder Kind lokal, GKE später)
+---
 
-Docker
+## 📘 Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube
 
-kubectl, helm
+### 🔹 **Schritt 1: Minikube + kubectl installieren**
 
-Git
-
-GitHub Actions (CI/CD)
-
-YAML (für Kubernetes Manifeste)
-
-(Optional: Prometheus, Grafana, Vault)
-
-📘 Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube
-
-🔹 Schritt 1: Minikube + kubectl installieren
-bash
-Kopieren
-Bearbeiten
+```bash
 sudo apt update
 sudo apt install -y curl apt-transport-https
 
@@ -60,26 +59,33 @@ sudo mv kubectl /usr/local/bin/
 # Minikube installieren
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
 
-🔹 Schritt 2: Minikube starten
-bash
-Kopieren
-Bearbeiten
+---
+
+### 🔹 **Schritt 2: Minikube starten**
+
+```bash
 minikube start --driver=docker
 kubectl get nodes
+```
 
-🔹 Schritt 3: Beispiel-App klonen
-bash
-Kopieren
-Bearbeiten
+---
+
+### 🔹 **Schritt 3: Beispiel-App klonen**
+
+```bash
 git clone https://github.com/kelseyhightower/kubernetes-the-hard-way
 # Oder eine eigene App z. B. mit Flask/Node.js/Postgres
-🔹 Schritt 4: App als Pods + Services deployen
-Erstelle deployment.yaml, service.yaml, ingress.yaml z. B. für ein einfaches Flask-Backend:
+```
 
-yaml
-Kopieren
-Bearbeiten
+---
+
+### 🔹 **Schritt 4: App als Pods + Services deployen**
+
+Erstelle `deployment.yaml`, `service.yaml`, `ingress.yaml` z. B. für ein einfaches Flask-Backend:
+
+```yaml
 # backend-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -100,40 +106,54 @@ spec:
         image: myregistry/bookstore-backend:latest
         ports:
         - containerPort: 5000
-🔹 Schritt 5: Ingress aktivieren & testen
-bash
-Kopieren
-Bearbeiten
+```
+
+---
+
+### 🔹 **Schritt 5: Ingress aktivieren & testen**
+
+```bash
 minikube addons enable ingress
 
 # Ingress-Ressource definieren (z. B. bookstore.local)
-🔹 Schritt 6: App testen
-bash
-Kopieren
-Bearbeiten
+```
+
+---
+
+### 🔹 **Schritt 6: App testen**
+
+```bash
 minikube service backend --url
-🔹 Schritt 7 (optional): Monitoring einrichten
-bash
-Kopieren
-Bearbeiten
+```
+
+---
+
+### 🔹 **Schritt 7 (optional): Monitoring einrichten**
+
+```bash
 minikube addons enable metrics-server
 # Oder Helm installieren und Prometheus stack deployen
-☁️ Phase 2: Deployment in die Cloud (GKE Beispiel)
+```
+
+---
+
+## ☁️ **Phase 2: Deployment in die Cloud (GKE Beispiel)**
+
 Wenn du bereit bist, machen wir weiter mit:
 
-GCP-Konto + Projekt einrichten
+1. GCP-Konto + Projekt einrichten
+2. `gcloud` CLI installieren
+3. GKE-Cluster erstellen
+4. Anwendung per `kubectl` deployen
+5. Optional: CI/CD mit GitHub Actions
 
-gcloud CLI installieren
+---
 
-GKE-Cluster erstellen
+### ✅ Möchtest du jetzt mit **Phase 1 starten**, und ich leite dich Schritt für Schritt durch (inkl. YAML-Dateien), oder gleich mit der Cloud-Phase?
 
-Anwendung per kubectl deployen
-
-Optional: CI/CD mit GitHub Actions
-
-✅ Möchtest du jetzt mit Phase 1 starten, und ich leite dich Schritt für Schritt durch (inkl. YAML-Dateien), oder gleich mit der Cloud-Phase?
 👉 Sag einfach:
 
-„Start Phase 1“ → Ich führe dich direkt durch Minikube + lokales Deployment
+* „Start Phase 1“ → Ich führe dich direkt durch Minikube + lokales Deployment
+* „Start Phase 2“ → Wir gehen gleich in die Cloud (z. B. Google GKE, EKS, oder AKS)
 
-„Start Phase 2“ → Wir gehen gleich in die Cloud (z. B. Google GKE, EKS, oder AKS)
+Oder wenn du eigene Vorstellungen für die App hast (z. B. andere Services oder Sprache), passe ich alles individuell für dich an.
