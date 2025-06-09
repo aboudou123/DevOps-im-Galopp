@@ -45,11 +45,11 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
 ## Tipps
 
-- **-** Verwende **grep**, **awk** und andere Kommandozeilen-Tools zur Verarbeitung der Protokolldatei.
+* Verwende **grep**, **awk** und andere Kommandozeilen-Tools zur Verarbeitung der Protokolldatei.
 
-- **-** Nutze Arrays oder assoziative Arrays, um Fehlermeldungen und deren Anzahl zu erfassen.
+* Nutze Arrays oder assoziative Arrays, um Fehlermeldungen und deren Anzahl zu erfassen.
 
--** Setze geeignete Fehlerbehandlung ein, um Fälle zu behandeln, in denen die Protokolldatei nicht existiert oder andere Probleme auftreten.
+* Setze geeignete Fehlerbehandlung ein, um Fälle zu behandeln, in denen die Protokolldatei nicht existiert oder andere Probleme auftreten.
 
 ## beispiel_log.log
 
