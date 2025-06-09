@@ -28,11 +28,11 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
    <h2>Answer</h2>
 
-   - **First created a folder and then a log file.**
+   - **Zuerst einen Ordner und dann eine Protokolldatei erstellen.**
 
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/task1.png)
 
-   - **Bash Code for Reference.**
+   - **Bash-Code als Referenz.**
 
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/task2.png)
 
@@ -40,9 +40,8 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
    ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/output.png)
 
-6. **Optional Enhancement:** Add a feature to automatically archive or move processed log files to a designated directory after analysis.
 
-## Tips
+## Tipps
 
 -Verwende grep, awk und andere Kommandozeilen-Tools zur Verarbeitung der Protokolldatei.
 -Nutze Arrays oder assoziative Arrays, um Fehlermeldungen und deren Anzahl zu erfassen.
