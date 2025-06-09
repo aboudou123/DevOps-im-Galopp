@@ -176,7 +176,7 @@ EOF
 
 ### Beispiel-Protokolldatei
 
-Eine Beispiel-Protokolldatei mit dem Namen sample_log.log befindet sich im selben Verzeichnis wie diese Challenge-Datei. Du kannst diese Datei verwenden, um dein Skript zu testen – oder diese Datei nutzen.
+Eine Beispiel-Protokolldatei mit dem Namen beispiel_log.log befindet sich im selben Verzeichnis wie diese Challenge-Datei. Du kannst diese Datei verwenden, um dein Skript zu testen – oder diese Datei nutzen.
 
 ### So nimmst du teil
 
@@ -188,7 +188,6 @@ Verwende die bereitgestellte beispiel_log.log oder erstelle eigene Logdateien zu
 
 Teste dein Skript mit verschiedenen Logdateien und Szenarien, um die Genauigkeit sicherzustellen.
 
-Reiche dein fertiges Skript bis zum Ende von Tag 10 der 90-Tage-DevOps-Challenge ein.
 
 
 
