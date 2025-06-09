@@ -49,7 +49,7 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
 - **-** Nutze Arrays oder assoziative Arrays, um Fehlermeldungen und deren Anzahl zu erfassen.
 
-- **-** Setze geeignete Fehlerbehandlung ein, um Fälle zu behandeln, in denen die Protokolldatei nicht existiert oder andere Probleme auftreten.
+- ** ** Setze geeignete Fehlerbehandlung ein, um Fälle zu behandeln, in denen die Protokolldatei nicht existiert oder andere Probleme auftreten.
 
 ## beispiel_log.log
 
