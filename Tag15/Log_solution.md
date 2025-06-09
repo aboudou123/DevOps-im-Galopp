@@ -30,15 +30,17 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
    - **Zuerst einen Ordner und dann eine Protokolldatei erstellen.**
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/task1.png)
+  <img width="791" alt="lo1" src="https://github.com/user-attachments/assets/ae0c5646-e8ed-41f5-8fd6-8d5b2e3c26de" />
+
 
    - **Bash-Code als Referenz.**
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/task2.png)
+  <img width="615" alt="lo3" src="https://github.com/user-attachments/assets/f9594e94-d09f-48ce-ac9f-94b07ab943a7" />
+
 
    - <h2>Output</h2>
 
-   ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day10/image/output.png)
+  <img width="712" alt="lo2" src="https://github.com/user-attachments/assets/13eefd9b-28c5-4056-a6a2-55286d2075a8" />
 
 
 ## Tipps
