@@ -1,7 +1,7 @@
 
-# Tag 15 Aufgabe: Log-Analysator und Berichtsgenerator
+# Tag 15 Aufgabe: Log-Analyse und Berichtserstellung
 
-## Herausforderungs-Titel: Log-Analysator und Berichtsgenerator
+## Herausforderungs-Titel: Log-Analyse und Berichtserstellung
 
 ## Szenario
 
