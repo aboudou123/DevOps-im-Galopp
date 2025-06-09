@@ -19,14 +19,15 @@ Schreibe ein Bash-Skript, das den Prozess der Analyse von Protokolldateien und d
 
 4. **Häufigste Fehlermeldungen:** Identifiziere die 5 häufigsten Fehlermeldungen und gib sie zusammen mit ihrer Häufigkeit aus.
 
-5. **Zusammenfassender Bericht:** Erstelle einen zusammenfassenden Bericht in einer separaten Textdatei. Der Bericht soll Folgendes enthalten:
+5. **Zusammenfassender Bericht:** Erstelle einen zusammenfassenden Bericht in einer separaten Textdatei. 
+Der Bericht soll Folgendes enthalten:
 
    * Datum der Analyse
    * Name der Protokolldatei
    * Anzahl der verarbeiteten Zeilen
    * Gesamtanzahl der Fehler
    * Die 5 häufigsten Fehlermeldungen mit Häufigkeit
-   * Liste der kritischen Ereignisse mit Zeilennummern
+   * Liste der kritischen Ereignisse mit Zeilennummern:
 
 6. **Optionale Erweiterung:** Füge eine Funktion hinzu, um die analysierten Protokolldateien nach der Auswertung automatisch zu archivieren oder in ein bestimmtes Verzeichnis zu verschieben.
 
