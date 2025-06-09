@@ -1,7 +1,9 @@
-🔧 Projektübersicht: "Kubernetes Bookstore"
+##🔧Projektübersicht: "Kubernetes Bookstore ##
+
 Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + DB) zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Cluster.
 
 🚀 Projektstruktur in zwei Phasen
+
 🧱 Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)
 Cluster lokal einrichten (Minikube oder Kind)
 
@@ -42,6 +44,7 @@ YAML (für Kubernetes Manifeste)
 (Optional: Prometheus, Grafana, Vault)
 
 📘 Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube
+
 🔹 Schritt 1: Minikube + kubectl installieren
 bash
 Kopieren
@@ -57,12 +60,14 @@ sudo mv kubectl /usr/local/bin/
 # Minikube installieren
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
 🔹 Schritt 2: Minikube starten
 bash
 Kopieren
 Bearbeiten
 minikube start --driver=docker
 kubectl get nodes
+
 🔹 Schritt 3: Beispiel-App klonen
 bash
 Kopieren
