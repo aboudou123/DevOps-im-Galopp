@@ -5,26 +5,27 @@ Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + D
 🚀 **Projektstruktur in zwei Phasen**
 
 🧱 Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)
-**Cluster lokal einrichten (Minikube oder Kind)
 
-**Containerisierte Anwendung bauen & deployen
+* Cluster lokal einrichten (Minikube oder Kind)
 
-**Netzwerk (Services, Ingress) einrichten
+* Containerisierte Anwendung bauen & deployen
 
-**Persistent Volumes & ConfigMaps einsetzen
+* Netzwerk (Services, Ingress) einrichten
 
-**Monitoring mit Prometheus + Grafana (optional)
+* Persistent Volumes & ConfigMaps einsetzen
+
+* Monitoring mit Prometheus + Grafana (optional)
 
 ☁️ Phase 2: **Cloud-Integration (z. B. GKE, EKS oder AKS)
 Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
-**CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
+* CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
 
-**Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)
+* Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)
 
-**Logging und Monitoring in der Cloud
+* Logging und Monitoring in der Cloud
 
-**Zugriff absichern (RBAC, Network Policies)
+* Zugriff absichern (RBAC, Network Policies)
 
 📦 **Technologien:**
 
@@ -32,25 +33,24 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
 * Kubernetes (Minikube oder Kind lokal, GKE später)
 
-Docker
+* Docker
 
-kubectl, helm
+* kubectl, helm
 
-Git
+* Git
 
-GitHub Actions (CI/CD)
+* GitHub Actions (CI/CD)
 
-YAML (für Kubernetes Manifeste)
-
+* YAML (für Kubernetes Manifeste)
 (Optional: Prometheus, Grafana, Vault)
 
 📘 **Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube**
 🔹 Schritt 1: Minikube + kubectl installieren
-bash
-Kopieren
-Bearbeiten
-sudo apt update
-sudo apt install -y curl apt-transport-https
+* bash
+* Kopieren
+* Bearbeiten
+* sudo apt update
+* sudo apt install -y curl apt-transport-https
 
 
 <img width="709" alt="kub1" src="https://github.com/user-attachments/assets/1d538de5-91ee-428a-b8dc-6bb2a86911c0" />
@@ -181,7 +181,12 @@ minikube addons enable metrics-server
 <img width="667" alt="kub20" src="https://github.com/user-attachments/assets/2bbdcd11-6b1b-4377-940c-c8770a1aea1d" />
 
 
+
+
+## Kommt in 1 Wooche## 
+
 # Oder Helm installieren und Prometheus stack deployen
+
 ☁️ Phase 2: Deployment in die Cloud (GKE Beispiel)
 Wenn du bereit bist, machen wir weiter mit:
 
