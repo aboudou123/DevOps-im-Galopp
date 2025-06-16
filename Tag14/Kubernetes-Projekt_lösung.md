@@ -1,4 +1,5 @@
-🔧 **Projektübersicht: "Kubernetes Bookstore"**
+
+## 🔧 **Projektübersicht: "Kubernetes Bookstore"**
 
 Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + DB) zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Cluster.
 
@@ -60,6 +61,7 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 # kubectl installieren
 curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
+
 sudo mv kubectl /usr/local/bin/
 
 <img width="742" alt="kub2" src="https://github.com/user-attachments/assets/739eb2c2-3060-4cdb-90bd-082f72cbb0d1" />
@@ -68,6 +70,7 @@ sudo mv kubectl /usr/local/bin/
 # Minikube installieren
 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 🔹 Schritt 2: Minikube starten
@@ -89,7 +92,9 @@ git clone https://github.com/kelseyhightower/kubernetes-the-hard-way
 
 
 # Oder eine eigene App z. B. mit Flask/Node.js/Postgres
+
 🔹 Schritt 4: App als Pods + Services deployen
+
 Erstelle deployment.yaml, service.yaml, ingress.yaml z. B. für ein einfaches Flask-Backend:
 
 yaml
