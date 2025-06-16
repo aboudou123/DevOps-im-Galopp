@@ -28,9 +28,9 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
 📦 **Technologien:**
 
-Ubuntu 22.04+
+* Ubuntu 22.04+
 
-Kubernetes (Minikube oder Kind lokal, GKE später)
+* Kubernetes (Minikube oder Kind lokal, GKE später)
 
 Docker
 
