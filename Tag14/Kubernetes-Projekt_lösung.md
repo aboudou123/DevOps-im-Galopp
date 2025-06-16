@@ -45,6 +45,7 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 (Optional: Prometheus, Grafana, Vault)
 
 📘 **Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube**
+
 🔹 Schritt 1: Minikube + kubectl installieren
 * bash
 * Kopieren
