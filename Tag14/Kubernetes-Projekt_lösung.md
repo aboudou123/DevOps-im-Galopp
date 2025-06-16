@@ -5,26 +5,26 @@ Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + D
 🚀 **Projektstruktur in zwei Phasen**
 
 🧱 Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)
-Cluster lokal einrichten (Minikube oder Kind)
+**Cluster lokal einrichten (Minikube oder Kind)
 
-Containerisierte Anwendung bauen & deployen
+**Containerisierte Anwendung bauen & deployen
 
-Netzwerk (Services, Ingress) einrichten
+**Netzwerk (Services, Ingress) einrichten
 
-Persistent Volumes & ConfigMaps einsetzen
+**Persistent Volumes & ConfigMaps einsetzen
 
-Monitoring mit Prometheus + Grafana (optional)
+**Monitoring mit Prometheus + Grafana (optional)
 
 ☁️ Phase 2: **Cloud-Integration (z. B. GKE, EKS oder AKS)
 Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
-CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
+**CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
 
-Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)
+**Secrets & Configs in der Cloud verwalten (z. B. mit KMS oder Vault)
 
-Logging und Monitoring in der Cloud
+**Logging und Monitoring in der Cloud
 
-Zugriff absichern (RBAC, Network Policies)
+**Zugriff absichern (RBAC, Network Policies)
 
 📦 **Technologien:**
 
