@@ -70,7 +70,8 @@ Die Jenkins-Pipeline automatisiert folgende Schritte:
 11. **Deployment in K8s**: Stellt die Anwendung im EKS-Cluster bereit.
 12. **Bereitstellung prüfen**: Überprüft den Status von Pods und Services.
 
-![Screenshot From 2025-03-06 18-55-08](https://github.com/user-attachments/assets/48a8c8e1-8b80-4efb-b853-b1ef0a0f7dfb)
+<img width="477" alt="jenky" src="https://github.com/user-attachments/assets/4abb1fd8-310c-497f-be6d-4ea0e83b18fc" />
+
 
 ---
 
