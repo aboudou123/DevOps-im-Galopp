@@ -325,9 +325,13 @@ Jenkins → Job → Build # → **Console Output**.
 
 ---
 
+
 Wenn du willst, mache ich jetzt direkt eins von beiden (einfach copy-paste, ohne Rückfragen):
 
 1. Erstelle Schritt-für-Schritt die Dateien & `git`-Befehle für ein neues Repo (ich liefere die genauen Befehle mit `yourusername` ersetzt), **oder**
 2. Ich schreibe dir die exakten Klick-/Feldwerte für deinen Jenkins-Job (Pipeline from SCM) zum copy-paste in die WebUI.
 
-Sag kurz welche Variante (1 oder 2) du willst — oder ich liefere beides sofort.
+
+https://devopscube.com/jenkins-pipeline-as-code/
+
+
