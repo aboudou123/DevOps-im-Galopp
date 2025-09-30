@@ -353,24 +353,24 @@ Jenkins → Job → Build # → **Console Output**.
 * Plugin-Problem: Manage Plugins → installiere fehlende Plugins (Git, GitHub, Pipeline).
 
 # Jenkins service Status / Logs
+
 sudo systemctl status jenkins
+
 sudo journalctl -u jenkins -n 200 --no-pager
 
 # Prüfe Datei mit initial password
+
 sudo ls -l /var/lib/jenkins/secrets/initialAdminPassword
+
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 # Port prüfen
+
 sudo ss -tulpn | grep :8080
 
 # Paketversion anzeigen
+
 apt policy jenkins
-
-
-
-
-
-
 
 
 ---
