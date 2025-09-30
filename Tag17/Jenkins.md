@@ -1,5 +1,5 @@
 
-# Lösung - Tag 7 GitHub
+# Lösung - Tag -jenkins
 
 
 ## **1 – Kurz-Checks (vorher)**
@@ -64,6 +64,13 @@ Schauen wir uns an, wo du gerade stehst:
 👉 Jetzt fehlen noch zwei Dinge:
 
 ---
+<img width="782" height="582" alt="j1" src="https://github.com/user-attachments/assets/c178a021-5b34-42cc-b56c-ede2068f2865" />
+
+
+
+<img width="580" height="457" alt="j2" src="https://github.com/user-attachments/assets/0de185fd-74e7-4e11-be9e-bb8e4749e8d3" />
+
+
 
 ### 1. Jenkins-Dienst starten (falls noch nicht gestartet)
 
@@ -84,6 +91,11 @@ Falls nicht, poste mir die Ausgabe, dann schauen wir in die Logs.
 
 ---
 
+
+<img width="580" height="457" alt="j2" src="https://github.com/user-attachments/assets/206514ae-2d1b-4969-96e9-df750746518c" />
+
+
+
 ### 2. Jenkins im Browser öffnen
 
 Öffne:
@@ -93,6 +105,19 @@ Falls nicht, poste mir die Ausgabe, dann schauen wir in die Logs.
   (IP findest du mit `ip a` → meistens unter `enp0s3` oder `eth0`)
 
 ---
+
+
+<img width="571" height="510" alt="j4" src="https://github.com/user-attachments/assets/599ceddc-691e-468e-9e56-7286ab217611" />
+
+
+
+<img width="633" height="397" alt="j5" src="https://github.com/user-attachments/assets/ad5b79c6-aa10-44ce-92e5-c74caa85f81a" />
+
+
+
+<img width="856" height="567" alt="j5a" src="https://github.com/user-attachments/assets/ec932ce4-0c24-4a43-99b7-77edc0b22b86" />
+
+
 
 ### 3. Unlock Jenkins
 
@@ -115,15 +140,11 @@ ea0e426577144bf496420c59eba617ba
 
 👉 Frage: Soll ich dir jetzt **die Klick-Anleitung für "weiteren Benutzer anlegen"** direkt im Jenkins-Interface geben, damit du gleich üben kannst?
 
-
-
 ---
 
 Hier Branching, GitHub und täglicher Workflow:
 
 #### Praktisches Beispiel:
-
-
 
 ---
 
