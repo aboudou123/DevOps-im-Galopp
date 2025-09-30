@@ -46,8 +46,7 @@ sudo ufw reload || true
 
 # 7. Initiales Admin-Passwort anzeigen
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-
-======
+=====CODE====
 ea0e426577144bf496420c59eba617ba
 ======
 http://localhost:8080/
