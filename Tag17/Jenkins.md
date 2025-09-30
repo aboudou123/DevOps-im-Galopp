@@ -17,7 +17,6 @@ Ohne Automatisierung müsste jemand bei jeder Codeänderung:
 * es auf einem Testserver bereitstellen,
 * und schließlich in die Produktion deployen.
 
-
 ---
 
 ### Umsetzung mit Jenkins
@@ -74,6 +73,9 @@ Jenkins wird so zum **CI/CD-Orchestrator** des Unternehmens: Es verbindet den Qu
 ---
 
 ## **1 – Kurz-Checks (vorher)**
+
+<img width="782" height="582" alt="j1" src="https://github.com/user-attachments/assets/87ee050d-51ee-43ac-88a3-899a2cef4d9d" />
+
 
 # Ubuntu-Version (nur zur Orientierung)
 lsb_release -a
