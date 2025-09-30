@@ -115,10 +115,13 @@ sudo ufw allow 8080/tcp || true
 sudo ufw reload || true
 
 # 7. Initiales Admin-Passwort anzeigen
+
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
 =====
 ea0e426577144bf496420c59eba617ba
 =====
+
 http://localhost:8080/
 
 ---
