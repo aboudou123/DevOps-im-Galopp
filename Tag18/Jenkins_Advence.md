@@ -1,6 +1,4 @@
 
-# Lösung - Tag 7 GitHub
-
 
 ## **1 – Kurz-Checks (vorher)**
 
