@@ -17,7 +17,6 @@ Ohne Automatisierung müsste jemand bei jeder Codeänderung:
 * es auf einem Testserver bereitstellen,
 * und schließlich in die Produktion deployen.
 
-👉 Das ist zeitaufwendig, fehleranfällig und wiederholt sich ständig.
 
 ---
 
@@ -68,7 +67,7 @@ Das Unternehmen setzt **Jenkins** ein, um diesen gesamten Prozess zu automatisie
 
 ---
 
-### 👉 Professionelle Zusammenfassung
+### 👉 Zusammenfassung
 
 Jenkins wird so zum **CI/CD-Orchestrator** des Unternehmens: Es verbindet den Quellcode, die Tests, die Qualitätssicherung und die Deployments, um den gesamten Software-Lebenszyklus zu automatisieren.
 
@@ -83,7 +82,6 @@ lsb_release -a
 sudo ss -tulpn | grep :8080 || echo "Port 8080 frei"
 
 Wenn Port 8080 belegt ist, notiere dir den Prozess oder wähle später einen anderen Port (Anleitung weiter unten).
-
 
 
 # 1. System aktualisieren
