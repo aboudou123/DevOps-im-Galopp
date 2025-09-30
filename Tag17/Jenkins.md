@@ -131,6 +131,15 @@ ea0e426577144bf496420c59eba617ba
 
 ---
 
+
+<img width="849" height="525" alt="j6" src="https://github.com/user-attachments/assets/8659e79c-e928-4a26-a89e-05470670c772" />
+
+
+
+<img width="874" height="543" alt="j8" src="https://github.com/user-attachments/assets/e396910d-8f56-40e5-9856-c539fe761f13" />
+
+
+
 ### 4. Plugins installieren & Benutzer anlegen
 
 * Wähle **Install suggested plugins**
@@ -138,7 +147,7 @@ ea0e426577144bf496420c59eba617ba
 
 ---
 
-👉 Frage: Soll ich dir jetzt **die Klick-Anleitung für "weiteren Benutzer anlegen"** direkt im Jenkins-Interface geben, damit du gleich üben kannst?
+<img width="694" height="355" alt="j9" src="https://github.com/user-attachments/assets/31e5ea3c-b68e-43d7-9d85-ee6818b55326" />
 
 ---
 
