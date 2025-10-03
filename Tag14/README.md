@@ -1,5 +1,3 @@
-Super Fragen 👍
-Ich erkläre dir Kubernetes Schritt für Schritt – so, dass es verständlich bleibt, mit Praxisbeispiel.
 
 ---
 
