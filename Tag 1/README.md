@@ -3,6 +3,7 @@
 # Überblick: DevOps-Ingenieur – Lern- und Werkzeugkette
 
 **DevOps** bedeutet nicht nur Tools, sondern eine Kultur und ein Prozess: Entwicklung und Betrieb enger verzahnen, alles automatisieren, Infrastruktur wie Code behandeln, Anwendungen reproduzierbar paketieren, skalierbar betreiben und kontinuierlich überwachen.
+
 Das Ziel: **kontinuierliche, zuverlässige und schnelle Auslieferung von Software**.
 
 ---
