@@ -1,4 +1,3 @@
----
 
 # Überblick: DevOps-Ingenieur – Lern- und Werkzeugkette
 
