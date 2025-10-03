@@ -21,6 +21,10 @@ Ohne Automatisierung müsste jemand bei jeder Codeänderung:
 
 ### Umsetzung mit Jenkins
 
+
+<img width="1095" height="548" alt="Jenkins" src="https://github.com/user-attachments/assets/86962a00-0500-464a-b21e-552d30334fe0" />
+
+
 Das Unternehmen setzt **Jenkins** ein, um diesen gesamten Prozess zu automatisieren.
 
 1. **Trigger (GitHub Webhook)**
