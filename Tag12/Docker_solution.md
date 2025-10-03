@@ -1,7 +1,7 @@
 
 # Tag 12 Antworten: Docker-Projekt für DevOps-Ingenieure
 
-### Ihr macht das einfach großartig bei **#30DevOps-im-Galopp**. Die heutige Herausforderung ist etwas ganz Besonderes, denn ihr werdet ein DevOps-Projekt mit Docker durchführen. Seid ihr aufgeregt? 😍
+### 😍
 
 # Dockerfile
 
@@ -79,5 +79,6 @@ Ein Dockerfile ist wie eine Reihe von Anweisungen zur Erstellung eines Container
 
 
       ![image](https://github.com/Bhavin213/90DaysOfDevOps/blob/master/2024/day17/image/9_Push_the_Image.png)
+
 
 
