@@ -70,7 +70,8 @@ Genauso sorgt Docker dafür, dass deine App immer gleich läuft – egal wo.
 ---
 ##  Docker-Systems Architektur
 
-<img width="601" height="314" alt="Github" src="https://github.com/user-attachments/assets/350deda5-fe17-4889-bf73-9e7d58b7fb05" />
+<img width="855" height="480" alt="Docker" src="https://github.com/user-attachments/assets/8bd2553b-2552-45b4-a30c-59ca3f47c745" />
+
 
 Dieses Diagramm stellt die Architektur eines Docker-Systems dar.
 
