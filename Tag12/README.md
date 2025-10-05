@@ -68,6 +68,55 @@ Genauso sorgt Docker dafür, dass deine App immer gleich läuft – egal wo.
 * **Für Firmen**: weniger Kosten, mehr Stabilität, einfaches Skalieren.
 
 ---
+##  Docker-Systems Architektur
+
+<img width="601" height="314" alt="Github" src="https://github.com/user-attachments/assets/350deda5-fe17-4889-bf73-9e7d58b7fb05" />
+
+Dieses Diagramm stellt die Architektur eines Docker-Systems dar.
+
+### 1. **Client-Seite (links)**:
+
+* **docker pull**: Dies ist der Befehl, den du verwendest, um ein Docker-Image aus einem Docker-Registry-Server herunterzuladen. Das Image ist wie eine Vorlage für Container.
+* **docker run**: Dies ist der Befehl, den du verwendest, um einen Docker-Container auf deinem lokalen System zu starten. Ein Container ist eine Instanz eines Docker-Images.
+* **docker build**: Dies ist der Befehl, um ein Docker-Image basierend auf einem `Dockerfile` zu erstellen. Dies ist ein Skript, das alle Anweisungen enthält, um das Image zu bauen.
+
+### 2. **Docker (Mitte)**:
+
+* **Docker Daemon**: Der Docker Daemon (`dockerd`) ist der Hauptprozess, der dafür verantwortlich ist, Docker-Container zu verwalten. Er läuft im Hintergrund und reagiert auf die Befehle von der Docker-CLI (Client) oder über die API.
+* **Image**: Hier siehst du eine Sammlung von Softwarekomponenten, die in einem Docker-Container verwendet werden. Die Bilder im Diagramm sind:
+
+  * **Linux**: Basisimage, auf dem das Betriebssystem läuft.
+  * **Python**: Ein Image, das für die Ausführung von Python-Anwendungen verwendet wird.
+  * **Redis**: Ein Image für den In-Memory-Datenbankdienst Redis.
+* **Container**: Container sind Instanzen von Images. Sie sind isolierte Umgebungen, in denen die Anwendung läuft. Zwei Container sind im Diagramm abgebildet, die jeweils auf unterschiedlichen Images basieren.
+
+### 3. **Registry (Rechts)**:
+
+* **Image**: Hier siehst du verschiedene Images, die in der Registry gespeichert sind, darunter:
+
+  * **NGINX**: Ein Webserver-Image, das oft für Reverse-Proxies oder als Webserver verwendet wird.
+  * **Ubuntu**: Ein Image, das ein grundlegendes Ubuntu-Betriebssystem enthält.
+  * **PostgreSQL**: Ein relationales Datenbankmanagement-System.
+  * **BusyBox**: Ein kleines und einfaches Image für Unix-Dienstprogramme.
+* **Extension**:
+
+  * **JFrog**: Ein Repository-Manager, der für die Verwaltung und Verteilung von Docker-Images und anderen Artefakten verwendet wird.
+  * **Tailscale**: Ein VPN (Virtual Private Network) für sichere Verbindungen.
+* **Plugin**:
+
+  * **docker**: Das Docker-Plugin zur Integration in andere Tools.
+  * **grafana**: Ein Open-Source-Tool zur Überwachung und Visualisierung von Daten.
+  * **vmware**: Integration von Docker mit VMware zur Virtualisierung und Bereitstellung von Container-Umgebungen.
+
+### Zusammenfassung:
+
+* **Docker Client** kommuniziert mit dem **Docker Daemon**, um Container zu starten, zu bauen oder Images herunterzuladen.
+* Der **Docker Daemon** verwaltet die Container, die auf Basis von **Docker Images** laufen.
+* **Docker Registry** ist eine zentrale Quelle für Docker-Images (z.B. **NGINX**, **PostgreSQL**), von der du Images **pulled** (herunterladen) kannst.
+* Erweiterungen und Plugins wie **JFrog** und **Tailscale** bieten zusätzliche Funktionen zur Verwaltung und Absicherung von Containern.
+
+
+
 ---
 
 ## 🔹 1. Was ist Docker?
