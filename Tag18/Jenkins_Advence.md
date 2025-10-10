@@ -80,17 +80,18 @@ pipeline {
 
 
 
-**Jenkins Credentials Binding**
 
-**Jenkins Credentials Binding** ist ein **Plugin** in Jenkins, das es dir erlaubt, **sicher mit sensiblen Daten** (wie Passwörtern, API-Tokens, SSH-Schlüsseln usw.) in deiner **Pipeline** zu arbeiten – **ohne** sie im Klartext im Code zu speichern.
+
 
 ---
 
-## 🔐 Was ist das?
+## Jenkins Credentials Binding 🔐 Was ist das?
 
 **Credentials Binding** bedeutet:
 
-> Du speicherst geheime Daten **verschlüsselt in Jenkins**, und kannst sie in deiner Pipeline **temporär als Umgebungsvariablen** verwenden – sicher und automatisiert.
+> Man speichert geheime Daten **verschlüsselt in Jenkins**, und kannst sie in deiner Pipeline **temporär als Umgebungsvariablen** verwenden – sicher und automatisiert.
+
+**Jenkins Credentials Binding** ist ein **Plugin** in Jenkins, das es dir erlaubt, **sicher mit sensiblen Daten** (wie Passwörtern, API-Tokens, SSH-Schlüsseln usw.) in deiner **Pipeline** zu arbeiten – **ohne** sie im Klartext im Code zu speichern.
 
 ---
 
