@@ -217,6 +217,16 @@ mein Docker-Container:
 
 ---
 
+<img width="686" height="559" alt="d4" src="https://github.com/user-attachments/assets/db138ea7-70b8-4947-bf3b-efbb05376001" />
+
+
+<img width="721" height="543" alt="d5" src="https://github.com/user-attachments/assets/91cfca20-0d80-4e19-b6a0-da60525f69b9" />
+
+
+<img width="814" height="520" alt="d6" src="https://github.com/user-attachments/assets/7342acd7-fe8e-484a-87d7-d6310329e49b" />
+
+
+
 ## ✅ Was habe ich  als Nächstes gemacht ?
 
 ### 🔁 1. **Container regelmäßig neu bauen und deployen**
@@ -226,6 +236,34 @@ Hier nutze ich  **Jenkins**, um:
 * Code aus GitHub zu klonen
 * Docker-Image zu bauen
 * Container automatisch neu zu starten
+
+
+<img width="676" height="594" alt="10" src="https://github.com/user-attachments/assets/4ee06d7b-92ad-46e6-b8d6-6967593b809c" />
+
+
+<img width="713" height="488" alt="11" src="https://github.com/user-attachments/assets/5312af37-b5c8-41d9-8523-0a41e3065a8a" />
+
+<img width="593" height="540" alt="12" src="https://github.com/user-attachments/assets/e9738e1a-d4da-4107-88ce-9462357e0907" />
+
+
+
+<img width="555" height="623" alt="13" src="https://github.com/user-attachments/assets/73dee4f0-b7c9-4b6a-837c-30c2140e73e7" />
+
+
+
+<img width="618" height="614" alt="14" src="https://github.com/user-attachments/assets/913beae8-a528-4131-ac06-00c45323f7ac" />
+
+
+<img width="499" height="438" alt="14a" src="https://github.com/user-attachments/assets/8d7fe5b8-5325-4671-b544-5b259e9734e0" />
+
+
+
+<img width="573" height="304" alt="14aa" src="https://github.com/user-attachments/assets/b8a53d7e-8d55-4635-9dfc-56625d31e245" />
+
+
+<img width="772" height="596" alt="14b" src="https://github.com/user-attachments/assets/6ccac500-c4f9-4a92-ab70-0730744374a7" />
+
+
 
 ### Jenkinsfile für meine App:
 
@@ -264,6 +302,18 @@ pipeline {
 }
 ```
 ---
+
+<img width="712" height="371" alt="16" src="https://github.com/user-attachments/assets/c0781c24-2ca3-43cb-a27b-dea692a51879" />
+
+
+
+<img width="761" height="609" alt="16a" src="https://github.com/user-attachments/assets/0dfa15e9-6cae-4183-a1d8-bd00a975c8a6" />
+
+
+
+<img width="696" height="414" alt="15" src="https://github.com/user-attachments/assets/43f5f446-3165-4046-aaf8-8849934e3d77" />
+
+
 
 ## 🧪 Testen
 
