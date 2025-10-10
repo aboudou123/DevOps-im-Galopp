@@ -3,6 +3,10 @@
 
 ## 🔹 1. **Jenkins Agent**
 
+<img width="666" height="302" alt="agents" src="https://github.com/user-attachments/assets/c81a5b00-980e-435c-8d16-f85dfb691918" />
+
+
+
 ### ✅ Was ist das?
 
 Ein **Jenkins Agent** (früher „Slave“) ist eine Maschine, auf der Jenkins Jobs ausführt. Jenkins selbst (der „Master“ bzw. „Controller“) verteilt Aufgaben an diese Agenten.
@@ -62,26 +66,15 @@ pipeline {
 
 ---
 
-### 3. **Optional: Nutze eine Shared Library**
-
-* Lege ein Git-Repo an mit deinem wiederverwendbaren Code (z. B. `vars/buildJavaProject.groovy`)
-* Füge in Jenkins → *Configure System* → *Global Pipeline Libraries* deine Library hinzu
-* Verwende sie im Jenkinsfile (wie oben gezeigt)
-
 ---
 
-## 🧠 Zusammenfassung
+##  Zusammenfassung
 
 | Begriff            | Zweck                                        | Beispiel / Anwendung            |
 | ------------------ | -------------------------------------------- | ------------------------------- |
 | **Agent**          | Führt Jobs auf entfernten Rechnern aus       | Jenkins Agent auf Docker-VM     |
 | **Docker Push**    | Läd dein Image ins Registry hoch             | `docker push myapp:latest`      |
 | **Shared Library** | Gemeinsamer, wiederverwendbarer Jenkins-Code | `@Library('my-shared-library')` |
-
-
-
-
-
 
 ---
 
@@ -200,11 +193,7 @@ withCredentials([sshUserPrivateKey(credentialsId: 'my-ssh-key', keyFileVariable:
 
 ---
 
-Wenn du willst, kann ich dir ein komplettes **CI/CD Jenkinsfile mit Credentials Binding** für dein Projekt schreiben – sag mir einfach, welches Setup du nutzt (Docker, Node.js, Java, etc.).
-
-
-
-Perfekt! Du hast eine **React + Django App** erfolgreich als **Docker-Container** gestartet. Ich erkläre dir, was du hier genau gemacht hast und wie du es ggf. mit **Jenkins** automatisieren kannst.
+Nun starte ich  **React + Django App**  als **Docker-Container** . Ziel ist diese App mit **Jenkins** automatisieren!
 
 ---
 
@@ -214,7 +203,7 @@ Perfekt! Du hast eine **React + Django App** erfolgreich als **Docker-Container*
 
 *  ein Docker-Image namens `react_django_app:latest`
 *  es als Container im Hintergrund (`-d`) gestartet
-* Port 8001 auf dem Host wird mit Port 8001 im Container verbunden
+* Port 8000 auf dem Host wird mit Port 8001 im Container verbunden
 
 ---
 
@@ -232,13 +221,13 @@ mein Docker-Container:
 
 ### 🔁 1. **Container regelmäßig neu bauen und deployen**
 
-Nutze **Jenkins**, um:
+Hier nutze ich  **Jenkins**, um:
 
 * Code aus GitHub zu klonen
 * Docker-Image zu bauen
 * Container automatisch neu zu starten
 
-### 📦 Jenkinsfile für meine App:
+### Jenkinsfile für meine App:
 
 ```groovy
 pipeline {
@@ -274,8 +263,6 @@ pipeline {
   }
 }
 ```
-
-
 ---
 
 ## 🧪 Testen
