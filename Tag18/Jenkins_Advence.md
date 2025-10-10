@@ -288,22 +288,3 @@ http://localhost:8080/
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-Wenn du willst, kann ich dir gerne einen **kompletten Beispiel-Workflow** für dein eigenes Projekt schreiben. Sag mir nur, welche Sprache (Java, Node.js, Python…) du nutzt.
