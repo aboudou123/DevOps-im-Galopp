@@ -101,7 +101,7 @@ Bevor du dieses Projekt verwendest, stelle sicher, dass du Folgendes hast:
 1. Klone das Repository:
 
    ```bash
-   git clone https://github.com/MosubAhmed/Multi-Tier-With-Database.git
+   git clone https://github.com/Koffitse/Multi-Tier-With-Database.git
    ```
 2. Terraform initialisieren:
 
