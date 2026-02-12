@@ -189,11 +189,9 @@ minikube addons enable metrics-server
 
 
 
-### In Zukunft  ### 
+###„Start Phase 2“ → Wir gehen nun in die Cloud (z. B. Google GKE, EKS, oder AKS) ### 
 
 # Helm installieren und Prometheus stack deployen
-
-☁️ Phase 2: Deployment in die Cloud (GKE Beispiel)
 
 GCP-Konto + Projekt einrichten
 
@@ -206,6 +204,6 @@ Anwendung per kubectl deployen
 Optional: CI/CD mit GitHub Actions
 
 
-„Start Phase 2“ → Wir gehen nun in die Cloud (z. B. Google GKE, EKS, oder AKS)
+
 
 **Das Projekt wird an dieser Stelle vorübergehend pausiert, da derzeit finanzielle Ressourcen für die Nutzung von Google GKE, AWS EKS oder Azure AKS erforderlich sind**.
