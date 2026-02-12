@@ -145,8 +145,9 @@ Das Ziel: **kontinuierliche, zuverlässige und schnelle Auslieferung von Softwar
 
 ---
 
- **praxisnahes Kubernetes-Projekt**,  
- du lernst **eine Container-Plattform lokal mit Vanilla Kubernetes** und anschließend wie man es **in eine Cloud-Umgebung  integriert** (z. B. GKE – Google Kubernetes Engine). Du arbeitest dabei mit Ubuntu.
+ # **praxisnahes Kubernetes-Projekt**:  
+ 
+**Ich erlerne den Aufbau einer Container-Plattform mit Vanilla Kubernetes in einer lokalen Umgebung und vertiefe anschließend die Integration in eine Cloud-Umgebung (z. B. Google Kubernetes Engine – GKE). Dabei arbeite ich auf Basis von Ubuntu.**
 
 ---
 
