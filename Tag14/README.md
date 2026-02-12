@@ -4,6 +4,7 @@
 ## 🔹 1. Was ist Kubernetes?
 
 Kubernetes (oft **K8s** genannt) ist ein **Orchestrierungssystem für Container**.
+
 👉 Stell dir vor: Docker erstellt und startet Container – aber **wenn du 100 oder 1000 Container** hast, brauchst du jemanden, der sie **verwaltet, startet, überwacht und bei Bedarf ersetzt**.
 
 Genau das macht Kubernetes:
@@ -825,11 +826,6 @@ http://hello.local
 
 ---
 
-Sag Bescheid, wenn du die Dateien lieber direkt von mir generiert haben willst (z. B. per Befehl), oder wenn du eine andere App statt `echoserver` einsetzen willst.
-Der 503-Fehler deutet weiterhin darauf hin, dass der Ingress-Controller den Backend-Service nicht erreichen kann. Lass uns nochmal ganz genau prüfen, ob das Deployment und der Service korrekt laufen und ob der Ingress richtig auf den Service zeigt.
-
-Bitte führe diese Schritte nacheinander aus und schick mir die Ausgaben:
-
 ---
 
 ### 1. Sind die Pods von `hello-node` im Running Zustand?
@@ -884,8 +880,6 @@ Diese Infos helfen, die genaue Ursache zu finden. Oft liegt es an:
 * Pods sind noch nicht bereit oder CrashLoop
 * Ingress verweist auf falschen Service oder Port
 
-Ich warte auf deine Ausgaben!
-Der Pod `hello-node-69847cdb8b-tkwp7` hat den Status **ImagePullBackOff**, das heißt: Kubernetes hat Probleme, das Container-Image herunterzuladen oder zu starten.
 
 ---
 
@@ -915,7 +909,7 @@ kubectl logs hello-node-69847cdb8b-tkwp7
 
 ---
 
-### 2. Mögliche Ursachen & Lösungen
+### 2. Fehler Diagnoze
 
 * Falscher Image-Name oder Image existiert nicht.
 * Kein Internetzugang im Cluster/VM zum Image-Registry.
@@ -930,14 +924,11 @@ Im `hello-node.yaml` steht vermutlich:
 ```yaml
 image: k8s.gcr.io/echoserver:1.4
 ```
-
-Dieses Image ist eigentlich öffentlich und sollte verfügbar sein. Falls dein Minikube keine Verbindung zum Internet hat, kann das scheitern.
-
 ---
 
 ### 4. Workaround: Image manuell auf Minikube laden
 
-Du kannst das Image direkt auf Minikube herunterladen oder ein alternatives Image nutzen.
+Man kann das Image direkt auf Minikube herunterladen oder ein alternatives Image nutzen.
 
 Zum Beispiel:
 
@@ -980,14 +971,11 @@ kubectl apply -f hello-node.yaml
 
 ---
 
-Sag Bescheid, was die Ausgabe von `kubectl describe pod` ist, oder wenn du möchtest, kann ich dir ein neues, funktionierendes Beispiel mit einem anderen Image schreiben.
-Das Problem ist klar: Das Image `k8s.gcr.io/echoserver:1.4` verwendet ein veraltetes Docker-Image-Format (Schema 1), das von neueren Docker-Versionen nicht mehr unterstützt wird. Deshalb schlägt das Herunterladen fehl — und der Pod startet nicht.
-
 ---
 
-## Lösung: Image wechseln
+##  Image wechseln
 
-Wir können ein alternatives, aktuelles Image für einen einfachen HTTP-Echo-Server verwenden. Zum Beispiel:
+ Ein alternatives, aktuelles Image für einen einfachen **HTTP-Echo-Server** verwenden. Zum Beispiel:
 
 ```yaml
 containers:
@@ -999,7 +987,7 @@ containers:
   - containerPort: 5678
 ```
 
-Das komplette Deployment + Service YAML würde so aussehen:
+**Das komplette Deployment + Service YAML würde so aussehen**:
 
 ```yaml
 apiVersion: apps/v1
@@ -1115,14 +1103,13 @@ einfügst, wird im Browser `Hallo Koffi!` erscheinen.
 
 ---
 
-Wenn du lieber eine „richtige“ Web-App hosten willst (z. B. Node.js, Python, HTML), kann ich dir dafür ebenfalls eine Vorlage geben. Aber für Tests ist `http-echo` sehr leichtgewichtig und nützlich.
 Der Text `hello world` wird in der **Deployment-Datei** definiert – also in deiner `hello-node.yaml`.
 
 ---
 
 ### 💡 Genauer Ort:
 
-In deiner `hello-node.yaml` sollte der Abschnitt so aussehen:
+In meiner `hello-node.yaml` sollte der Abschnitt so aussehen:
 
 ```yaml
 spec:
@@ -1137,7 +1124,7 @@ spec:
 
 ---
 
-### 🔁 Wenn du den Text ändern willst:
+### 🔁 Wenn ich den Text ändern will:
 
 1. Öffne die Datei zur Bearbeitung:
 
@@ -1169,8 +1156,6 @@ kubectl apply -f hello-node.yaml
 
 ---
 
-Wenn du willst, kann ich dir eine komplette Datei generieren, die du direkt kopieren kannst. Sag einfach Bescheid!
-Sehr gut, du kommst dem Ziel näher!
 
 ---
 
@@ -1179,13 +1164,7 @@ Sehr gut, du kommst dem Ziel näher!
 * Einer der neuen Pods (`hello-node-576d9ffb45-vftwx`) läuft korrekt: ✅ `STATUS: Running`
 * Ein anderer (`hello-node-64485c4dd4-md2tm`) ist fehlerhaft: ❌ `STATUS: Error`
 
-➡️ **Aber keine Sorge:** Wenn ein Pod fehlerhaft ist, aber **ein anderer erfolgreich läuft**, dann funktioniert dein Service trotzdem – Kubernetes leitet Anfragen an den funktionierenden Pod weiter.
-
 ---
-
-### 🔍 Warum sind zwei Pods da?
-
-Dein Deployment hat vermutlich `replicas: 2` oder du hast beim Testen alte Deployments nicht gelöscht. Du kannst die **Pod-Anzahl** auf **eine** setzen, um Übersicht zu behalten.
 
 ---
 
@@ -1204,9 +1183,6 @@ Erwartete Antwort:
 ```
 hello world
 ```
-
-Oder dein angepasster Text wie `Hallo Koffi!`.
-
 ---
 
 ### 🔧 Falls du die Replikate auf **1** reduzieren willst:
@@ -1226,12 +1202,8 @@ kubectl delete pod -l app=hello-node  # alte Pods löschen, neuer wird automatis
 ```
 
 ---
+<img width="806" height="609" alt="image" src="https://github.com/user-attachments/assets/1fac3f87-ac2a-42d9-861d-3621cfb4aca2" />
 
-Wenn du möchtest, kann ich dir das YAML-File auch bereinigen und optimieren – sag einfach Bescheid!
-Du bist fast am Ziel! 💪
-Aber es gibt einen **kleinen Fehler** in deiner `args`-Zeile – und deshalb wird deine App **wahrscheinlich nichts anzeigen oder abstürzen**.
-
----
 
 ### ❌ Problem:
 
@@ -1489,6 +1461,11 @@ kubectl get pods -l app=hello-node
 
 Ergebnis:
 
+<img width="808" height="284" alt="image" src="https://github.com/user-attachments/assets/483d4aad-9e2f-4ed3-adf8-6c3426f9487c" />
+
+
+
+
 ```
 NAME                          READY   STATUS    RESTARTS   AGE
 hello-node-xxxxx              1/1     Running   0          ...
@@ -1562,6 +1539,11 @@ Suche nach einem Pod wie:
 ```
 metrics-server-xxxxx               1/1     Running
 ```
+
+<img width="847" height="584" alt="image" src="https://github.com/user-attachments/assets/c5528138-f00d-4c9f-bd63-cb6ef13c3d48" />
+
+
+
 
 Wenn er läuft → perfekt.
 
@@ -1670,7 +1652,7 @@ kubectl logs -n kube-system -l k8s-app=metrics-server
 
 ### ✅ Wenn alles klappt:
 
-Dann bekommst du sowas wie:
+Dann bekommt man sowas wie:
 
 ```bash
 NAME                          CPU(cores)   MEMORY(bytes)
@@ -1679,16 +1661,15 @@ hello-node-xxxxx              2m           15Mi
 
 ---
 
-Wenn du jetzt noch **Dashboards (Grafana)** oder **Alerting (Prometheus)** brauchst – sag einfach Bescheid, das ist der nächste Schritt im Monitoring 🚀
-Nein, das ist nicht der Metrics-Server-Pod.
+**Dashboards (Grafana)** oder **Alerting (Prometheus)**
 
-Der Pod `hello-node-796f7d5cfd-sqvlc` gehört zu deinem **hello-node Deployment** (deine Anwendung).
+Der Pod `hello-node-796f7d5cfd-sqvlc` gehört zu meinem **hello-node Deployment**
 
 ---
 
 ### So findest du den Metrics-Server-Pod:
 
-Gib diesen Befehl ein:
+ Befehl ein:
 
 ```bash
 kubectl get pods -n kube-system | grep metrics-server
@@ -1700,12 +1681,6 @@ Du solltest eine Zeile sehen, die mit `metrics-server-` beginnt, etwa so:
 metrics-server-5d7b8fbb7f-abcde   1/1   Running   0   5m
 ```
 
-Das ist der Pod vom Metrics Server.
-
----
-
-Falls du den nicht siehst, melde dich gern – dann schauen wir, ob er richtig läuft oder ob es ein Problem gibt!
-Cool, du willst dein Kubernetes-Deployment in die Cloud bringen – mit **GKE (Google Kubernetes Engine)**! Hier ist der typische Workflow Schritt für Schritt:
 
 ---
 
@@ -1770,7 +1745,7 @@ Dann:
 kubectl apply -f hello-node.yaml
 ```
 
-Dein Deployment und Service sind jetzt im GKE-Cluster aktiv.
+Mein Deployment und Service sind jetzt im GKE-Cluster aktiv.
 
 ---
 
@@ -1808,31 +1783,12 @@ jobs:
     - run: kubectl apply -f hello-node.yaml
 ```
 
----
 
-Wenn du willst, kann ich dir zu jedem Schritt auch ausführliche Befehle, Tipps und Beispiele liefern – sag einfach Bescheid!
-
-
-Hier kannst du entscheiden, ob du anonymisierte Nutzungsdaten an Google senden möchtest, um das Tool zu verbessern.
-
-* Wenn du mit „Ja“ einverstanden bist, gib **y** ein und drücke Enter.
-* Wenn du nicht teilnehmen möchtest, einfach **Enter** oder **N** drücken.
-
-Das hat keine Auswirkung auf die Funktionalität, es ist nur eine freiwillige Statistik.
-
-Wie möchtest du?
-Hier kannst du einfach mit **Enter** bestätigen, damit die Datei `/home/koffi/.bashrc` automatisch angepasst wird.
-
-Das sorgt dafür, dass die `gcloud`-Befehle direkt im Terminal funktionieren, ohne dass du jedes Mal den kompletten Pfad angeben musst.
-
----
 
 Also: Einfach **Enter** drücken!
-
-Perfekt! 🎉
-
+"
 Du hast dich erfolgreich bei `gcloud` angemeldet als **[patrickaboudou@gmail.com](mailto:patrickaboudou@gmail.com)**.
-
+"
 ---
 
 ### Nächster Schritt: Projekt festlegen
@@ -1861,12 +1817,14 @@ gcloud config set project PROJECT_ID
 
 ---
 
-Möchtest du, dass ich dir helfe, ein GKE-Cluster im Projekt einzurichten?
-Die Meldung sagt dir, dass die **Kubernetes Engine API** in deinem Projekt noch nicht aktiviert ist.
+Möchtest du, dass ich dir helfe, ein ?
+Die Meldung sagt dir, dass die  in deinem Projekt noch nicht aktiviert ist.
 
 ---
 
-### So gehst du vor:
+### GKE-Cluster im Projekt einzurichten:
+
+**Kubernetes Engine API**
 
 Gib einfach **`y`** ein und drücke Enter, damit `gcloud` die API aktiviert und danach den Cluster erstellt.
 
@@ -1883,44 +1841,16 @@ Falls du die API lieber manuell aktivieren möchtest:
 Danach kannst du den Befehl nochmal ausführen.
 
 ---
+---
 
-Möchtest du, dass ich dich weiter begleite, sobald die API aktiviert ist?
-
-Deine Fehlermeldung zeigt, dass **für dein Projekt keine Abrechnung (Billing) aktiviert ist**. Ohne aktivierte Abrechnung kannst du keine GKE-Cluster erstellen, da dafür Ressourcen in der Cloud genutzt werden, die Kosten verursachen können.
+### Was nun  : API aktivieren ?
 
 ---
 
-### Was du tun musst:
-
-1. **Billing-Konto verknüpfen:**
-
-   * Gehe in die Google Cloud Console unter:
-     [https://console.cloud.google.com/billing](https://console.cloud.google.com/billing)
-
-   * Falls du noch kein Billing-Konto hast, erstelle eines.
-
-2. **Billing-Konto mit deinem Projekt verbinden:**
-
-   * Gehe zu:
-     [https://console.cloud.google.com/iam-admin/settings](https://console.cloud.google.com/iam-admin/settings)
-
-   * Wähle dein Projekt `modern-voice-462422-a3` aus.
-
-   * Verbinde es mit deinem Billing-Konto.
 
 ---
 
-### Falls du die Schritte nicht kennst, hier eine kurze Anleitung:
-
-* In der Google Cloud Console, links im Menü:
-  **Abrechnung** > **Abrechnungskonten** > neues Konto erstellen (falls nicht vorhanden)
-
-* Danach im Menü:
-  **Abrechnung** > **Projektverknüpfung** > Projekt auswählen > Billing-Konto zuweisen
-
----
-
-Wenn das erledigt ist, kannst du den Cluster-Befehl nochmal ausführen:
+Den Cluster-Befehl nochmal ausführen:
 
 ```bash
 gcloud container clusters create my-cluster --zone us-central1-a --num-nodes=1
@@ -1928,8 +1858,6 @@ gcloud container clusters create my-cluster --zone us-central1-a --num-nodes=1
 
 ---
 
-Möchtest du, dass ich dich durch die Schritte in der Cloud Console führe?
-Ja, das stimmt – GKE ist ein managed Kubernetes-Dienst von Google Cloud und kostet je nach Nutzung (Compute, Storage, etc.). Wenn du komplett kostenlos und lokal oder mit minimalen Kosten arbeiten möchtest, gibt es ein paar Alternativen:
 
 ### Kostenlose oder sehr günstige Alternativen für Kubernetes-Deployment:
 
