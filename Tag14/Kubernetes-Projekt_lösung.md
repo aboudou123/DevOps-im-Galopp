@@ -1,8 +1,9 @@
 
 # Projektübersicht: "Kubernetes Bookstore"
 
-Ziel: Du deployst eine einfache "Bookstore"-Webanwendung (Frontend + Backend + DB) 
-zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Cluster.
+
+**Ziel:** Ich deploye eine einfache „Bookstore“-Webanwendung (Frontend + Backend + DB) zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Cluster.
+
 
 🚀 **Projektstruktur in zwei Phasen**
 
@@ -17,6 +18,7 @@ zuerst auf einem lokalen Kubernetes-Cluster, dann auf einem Cloud-Kubernetes-Clu
 * Persistent Volumes & ConfigMaps einsetzen
 
 * Monitoring mit Prometheus + Grafana (optional)
+
 
 ☁️ Phase 2: **Cloud-Integration (z. B. GKE, EKS oder AKS)
 Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
@@ -95,7 +97,7 @@ git clone https://github.com/kelseyhightower/kubernetes-the-hard-way
 <img width="719" alt="kub3" src="https://github.com/user-attachments/assets/db1cd885-77d1-45cc-a291-f3ff431587c9" />
 
 
-# Oder eine eigene App z. B. mit Flask/Node.js/Postgres
+# Eine eigene App mit Flask/Node.js/Postgres
 
 🔹 Schritt 4: App als Pods + Services deployen
 
