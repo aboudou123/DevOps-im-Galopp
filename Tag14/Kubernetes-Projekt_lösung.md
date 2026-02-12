@@ -49,9 +49,7 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 📘 **Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube**
 
 🔹 Schritt 1: Minikube + kubectl installieren
-* bash
-* Kopieren
-* Bearbeiten
+
 * sudo apt update
 * sudo apt install -y curl apt-transport-https
 
@@ -80,11 +78,13 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 🔹 Schritt 2: Minikube starten
-bash
-Kopieren
-Bearbeiten
+
+```
 minikube start --driver=docker
+```
+```
 kubectl get nodes
+```
 
 🔹 Schritt 3: Beispiel-App klonen
 
@@ -95,14 +95,11 @@ git clone https://github.com/kelseyhightower/kubernetes-the-hard-way
 <img width="719" alt="kub3" src="https://github.com/user-attachments/assets/db1cd885-77d1-45cc-a291-f3ff431587c9" />
 
 
-
-
 # Oder eine eigene App z. B. mit Flask/Node.js/Postgres
 
 🔹 Schritt 4: App als Pods + Services deployen
 
 Erstelle *deployment.yaml*, *service.yaml*, *ingress.yaml* z. B. für ein einfaches Flask-Backend:
-
 
 
 # backend-deployment.yaml
@@ -127,15 +124,14 @@ spec:
         image: myregistry/bookstore-backend:latest
         ports:
         - containerPort: 5000
-🔹 Schritt 5: Ingress aktivieren & testen
-bash
-Kopieren
-Bearbeiten
-minikube addons enable ingress
-
 ```
 
 
+🔹 Schritt 5: Ingress aktivieren & testen
+
+```
+minikube addons enable ingress
+```
 
 <img width="719" alt="kub3" src="https://github.com/user-attachments/assets/b310b434-2ddb-4973-9e5b-996afa1c22de" />
 
@@ -148,22 +144,21 @@ minikube addons enable ingress
 
 
 
-
 <img width="641" alt="kub6" src="https://github.com/user-attachments/assets/5818cbaf-c97b-4b42-9aeb-58d711c4d6d3" />
 
 
 
 # Ingress-Ressource definieren (z. B. bookstore.local)
 🔹 Schritt 6: App testen
-bash
-Kopieren
-Bearbeiten
+```
 minikube service backend --url
+```
 🔹 Schritt 7 (optional): Monitoring einrichten
-bash
-Kopieren
-Bearbeiten
+
+```
 minikube addons enable metrics-server
+```
+
 
 <img width="641" alt="kub6" src="https://github.com/user-attachments/assets/29335c1c-f70f-4c61-bbc0-cffd0fa0fc7f" />
 
