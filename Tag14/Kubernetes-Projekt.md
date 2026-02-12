@@ -297,11 +297,9 @@ Wenn du bereit bist, machen wir weiter mit:
 
 ---
 
-### ✅ Möchtest du jetzt mit **Phase 1 starten**, und ich leite dich Schritt für Schritt durch (inkl. YAML-Dateien), oder gleich mit der Cloud-Phase?
-
-👉 Sag einfach:
+### ✅ Ich starte **Phase 1**
 
 * „Start Phase 1“ → Ich führe dich direkt durch Minikube + lokales Deployment
-* „Start Phase 2“ → Wir gehen gleich in die Cloud (z. B. Google GKE, EKS, oder AKS)
+* „Start Phase 2“ → Ich gehe dann  in die Cloud (z. B. Google GKE, EKS, oder AKS)
 
-Oder wenn du eigene Vorstellungen für die App hast (z. B. andere Services oder Sprache), passe ich alles individuell für dich an.
+[lösung](https://github.com/aboudou123/DevOps-im-Galopp/blob/main/Tag14/Kubernetes-Projekt_l%C3%B6sung.md)
