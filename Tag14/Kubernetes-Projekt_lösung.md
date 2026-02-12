@@ -189,7 +189,7 @@ minikube addons enable metrics-server
 
 
 
-## Öffne Projekt ## 
+### In Zukunft  ### 
 
 # Helm installieren und Prometheus stack deployen
 
