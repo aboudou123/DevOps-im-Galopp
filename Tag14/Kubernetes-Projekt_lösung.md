@@ -59,6 +59,7 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
 
 # kubectl installieren
+```bash
 curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
 
@@ -97,6 +98,7 @@ git clone https://github.com/kelseyhightower/kubernetes-the-hard-way
 
 Erstelle deployment.yaml, service.yaml, ingress.yaml z. B. für ein einfaches Flask-Backend:
 
+```bash
 yaml
 Kopieren
 Bearbeiten
@@ -125,7 +127,7 @@ bash
 Kopieren
 Bearbeiten
 minikube addons enable ingress
-
+```bash
 
 
 <img width="719" alt="kub3" src="https://github.com/user-attachments/assets/b310b434-2ddb-4973-9e5b-996afa1c22de" />
