@@ -7,7 +7,7 @@
 
 🚀 **Projektstruktur in zwei Phasen**
 
-🧱 Phase 1: Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)
+🧱 Phase 1: **Vanilla Kubernetes lokal mit Ubuntu (Minikube oder Kind)**
 
 * Cluster lokal einrichten (Minikube oder Kind)
 
@@ -20,7 +20,7 @@
 * Monitoring mit Prometheus + Grafana (optional)
 
 
-☁️ Phase 2: **Cloud-Integration (z. B. GKE, EKS oder AKS)
+🧱 Phase 2: **Cloud-Integration (z. B. GKE, EKS oder AKS)
 Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 
 * CI/CD Deployment vorbereiten (z. B. GitHub Actions + kubectl)
@@ -48,7 +48,7 @@ Cloud-Kubernetes-Cluster aufsetzen (z. B. GKE via Google Cloud CLI)**
 * YAML (für Kubernetes Manifeste)
 (Optional: Prometheus, Grafana, Vault)
 
-📘 **Phase 1 Schritt-für-Schritt – Lokales Kubernetes mit Minikube**
+📘 **Phase 1 : Lokales Kubernetes mit Minikube**
 
 🔹 Schritt 1: Minikube + kubectl installieren
 
@@ -151,6 +151,7 @@ minikube addons enable ingress
 
 
 # Ingress-Ressource definieren (z. B. bookstore.local)
+
 🔹 Schritt 6: App testen
 ```
 minikube service backend --url
@@ -177,13 +178,7 @@ minikube addons enable metrics-server
 <img width="968" alt="kub13" src="https://github.com/user-attachments/assets/d801f019-cd15-4efd-9ce6-42ebc5dd8ac0" />
 
 
-
-
-
 <img width="930" alt="kub15" src="https://github.com/user-attachments/assets/b0f1b65f-d93b-497a-bdbd-aefd06412232" />
-
-
-
 
 <img width="714" alt="kub18" src="https://github.com/user-attachments/assets/bf33fd60-dbb3-4f75-984f-e5a8a34e909c" />
 
@@ -196,7 +191,7 @@ minikube addons enable metrics-server
 
 ## Öffne Projekt ## 
 
-# Oder Helm installieren und Prometheus stack deployen
+# Helm installieren und Prometheus stack deployen
 
 ☁️ Phase 2: Deployment in die Cloud (GKE Beispiel)
 
@@ -211,4 +206,6 @@ Anwendung per kubectl deployen
 Optional: CI/CD mit GitHub Actions
 
 
-„Start Phase 2“ → Wir gehen gleich in die Cloud (z. B. Google GKE, EKS, oder AKS)
+„Start Phase 2“ → Wir gehen nun in die Cloud (z. B. Google GKE, EKS, oder AKS)
+
+**Das Projekt wird an dieser Stelle vorübergehend pausiert, da derzeit finanzielle Ressourcen für die Nutzung von Google GKE, AWS EKS oder Azure AKS erforderlich sind**.
