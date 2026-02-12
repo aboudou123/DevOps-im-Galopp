@@ -1,7 +1,11 @@
 
+
+# Kubernetes K8s
+
+
 ---
 
-## 🔹 1. Was ist Kubernetes?
+## 🔹 1. Was ist Kubernetes K8s ?
 
 Kubernetes (oft **K8s** genannt) ist ein **Orchestrierungssystem für Container**.
 
