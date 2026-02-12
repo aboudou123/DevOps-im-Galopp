@@ -187,9 +187,12 @@ minikube addons enable metrics-server
 <img width="667" alt="kub20" src="https://github.com/user-attachments/assets/2bbdcd11-6b1b-4377-940c-c8770a1aea1d" />
 
 
+===========================================================================
+
+### Start Phase 2 → Wir gehen nun in die Cloud (z. B. Google GKE, EKS, oder AKS) ### 
 
 
-###„Start Phase 2“ → Wir gehen nun in die Cloud (z. B. Google GKE, EKS, oder AKS) ### 
+===========================================================================
 
 # Helm installieren und Prometheus stack deployen
 
