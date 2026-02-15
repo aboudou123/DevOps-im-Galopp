@@ -136,13 +136,12 @@ http://localhost:8080/
 
 ## **2 – Erste Schritte mit Jenkins**
 
-Sehr gut 👍 – du bist schon fast fertig!
-Schauen wir uns an, wo du gerade stehst:
 
-* Deine Firewall ist **nicht aktiv**, deshalb musst du dir um `ufw` keine Sorgen machen → Jenkins ist von außen über Port **8080** erreichbar.
-* Du hast `systemctl enable jenkins` ausgeführt. Das bedeutet: Jenkins startet jetzt automatisch beim Booten.
 
-👉 Jetzt fehlen noch zwei Dinge:
+* Meine Firewall ist **nicht aktiv** → Jenkins ist von außen über Port **8080** erreichbar.
+* `systemctl enable jenkins` ausgeführt. Das bedeutet: Jenkins startet jetzt automatisch beim Booten.
+
+👉noch zwei Dinge:
 
 ---
 <img width="782" height="582" alt="j1" src="https://github.com/user-attachments/assets/c178a021-5b34-42cc-b56c-ede2068f2865" />
@@ -202,7 +201,7 @@ Falls nicht, poste mir die Ausgabe, dann schauen wir in die Logs.
 
 ### 3. Unlock Jenkins
 
-Du hast das initiale Admin-Passwort schon ausgelesen:
+das initiale Admin-Passwort schon ausgelesen:
 
 ```
 ea0e426577144bf496420c59eba617ba
@@ -244,7 +243,7 @@ Hier Branching, GitHub und täglicher Workflow:
 
 # Vorbereitungen (kurz)
 
-1. Prüfe, ob dein VM Internetzugang hat (damit Jenkins GitHub erreichen kann):
+1. Prüfe, ob mein VM Internetzugang hat (damit Jenkins GitHub erreichen kann):
 
 ```bash
 curl -I https://github.com
@@ -256,10 +255,8 @@ curl -I https://github.com
 git --version
 ```
 
-Wenn nicht: `sudo apt install -y git`.
+ `sudo apt install -y git`.
 
-3. Stelle sicher, dass die Plugins vorhanden sind:
-   Jenkins → **Manage Jenkins** → **Manage Plugins** → Tab **Installed** → suche nach **Git plugin** und **Pipeline** (Pipeline: Groovy). Falls fehlen: Tab **Available** → suche → installiere → Jenkins ggf. neu starten.
 
 ---
 
@@ -314,7 +311,6 @@ git branch -M main
 git push -u origin main
 ```
 
-Wenn du beim Push nach Credentials gefragt wirst, melde dich mit deinen GitHub-Daten oder einem PAT (siehe unten).
 
 ---
 
@@ -455,10 +451,3 @@ apt policy jenkins
 
 
 ---
-
-Wenn du willst, mache ich jetzt direkt eins von beiden (einfach copy-paste, ohne Rückfragen):
-
-1. Erstelle Schritt-für-Schritt die Dateien & `git`-Befehle für ein neues Repo (ich liefere die genauen Befehle mit `yourusername` ersetzt), **oder**
-2. Ich schreibe dir die exakten Klick-/Feldwerte für deinen Jenkins-Job (Pipeline from SCM) zum copy-paste in die WebUI.
-
-Sag kurz welche Variante (1 oder 2) du willst — oder ich liefere beides sofort.
