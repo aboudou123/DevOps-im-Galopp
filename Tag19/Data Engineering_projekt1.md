@@ -124,13 +124,4 @@ Ein Dashboard wurde mit **Google Looker Studio** entwickelt, um Ereignisse in de
 
 ---
 
-## Danksagungen & Quellen
-
-Dank an **DataTalksClub!** für das Mentoring während des Data Engineering Zoom Camps.
-
-> „DataTalks.Club – der Ort, um über Daten zu sprechen! Wir sind eine Community von Menschen mit Leidenschaft für Daten …“
-
----
-
----
 
