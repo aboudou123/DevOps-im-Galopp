@@ -36,13 +36,13 @@ Dieses Projekt ist eine vollständige **ETL-Pipeline (Extract, Transform, Load)*
 
 ## Tools & Technologien
 
-* **Containerisierung:** Docker
-* **Workflow-Orchestrierung:** Mage
-* **Datentransformationen:** dbt (Data Build Tool)
-* **Data Lake:** Google Cloud Storage
-* **Data Warehouse:** Google BigQuery
-* **Infrastructure as Code (IaC):** Terraform
-* **Visualisierung:** Looker Studio
+* **Containerisierung:** [Docker](https://www.docker.com/)
+* **Workflow-Orchestrierung:** [Mage](https://www.mage.ai/)
+* **Datentransformationen:** [dbt (Data Build Tool)](https://www.getdbt.com/)
+* **Data Lake:** [Google Cloud Storage](https://cloud.google.com/storage?hl=en)
+* **Data Warehouse:** [Google BigQuery](https://cloud.google.com/bigquery?hl=en)
+* **Infrastructure as Code (IaC):** [Terraform](https://developer.hashicorp.com/terraform)
+* **Visualisierung:** [Looker Studio](https://lookerstudio.google.com/navigation/reporting)
 
 ---
 
@@ -109,7 +109,7 @@ Mage verwendet Python-, SQL- und dbt-Blöcke in folgender Reihenfolge:
 
 Ein Dashboard wurde mit **Google Looker Studio** entwickelt, um Ereignisse in der Lkw-Logistik zu visualisieren. Durch die direkte Integration mit BigQuery profitiert das Dashboard von geringer Latenz und hoher Performance.
 
-**Dashboard-Link:** HIER
+**Dashboard-Link:** [HIER](https://lookerstudio.google.com/reporting/8d39bf3b-80ee-4d58-898e-84173bb0af48/page/jcErD?s=pBt7UHZBg1k)
 
 <img src="static/assets/dashboard.png" alt="Chart1" height="300" width="600">
 
