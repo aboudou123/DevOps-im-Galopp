@@ -1,5 +1,4 @@
 
-Ziele der Übersetzung:
 - Die **fachliche Bedeutung, Struktur und Argumentationslogik** müssen erhalten bleiben.
 - Die **Formatierung** (Markdown-Struktur, Überschriften, Listen, Links, Hervorhebungen, Codeblöcke, Zitate) soll so genau wie möglich beibehalten werden.
 - Die Sprache soll **professionell, technisch präzise und natürlich** wirken – wie ein ursprünglich auf Deutsch verfasstes Projektdokument.
@@ -143,107 +142,22 @@ Dashboard Link: [HERE](https://lookerstudio.google.com/s/pBt7UHZBg1k)
 
 -----------------------------
 
+### Acknowledgements & Credits
 
-
-`markdown
-Anforderungen:
-
-Struktur & Format beibehalten
-   - Übernimm die komplette Markdown-Struktur:
-     - Überschriften (H1, H2, H3, …)
-     - Listen, Zitate, Code-Blöcke
-     - Links, Inline-Code, fett/kursiv
-   - Dateinamen, URLs, Befehle und Code (Shell, git, etc.) bleiben unverändert.
-
-Inhaltliche Treue
-   - Bewahre die fachliche Bedeutung, Reihenfolge und Logik vollständig.
-   - Lass keine Inhalte weg und füge keine neuen inhaltlichen Punkte hinzu.
-
-Professioneller, technischer Stil
-   - Verwende eine präzise, fachlich saubere und formelle deutsche Sprache, geeignet für eine Data-Engineering-Projektdokumentation.
-   - Nutze gängige Fachterminologie (z. B. „Dienstkonto“, „Rolle“, „Umgebungsvariable“, „Recheninstanz“, „Infrastruktur bereitstellen“, „Speicher-Bucket“, „Dataset“).
-   - Vermeide wörtliche 1:1-Übersetzungen; formuliere Sätze idiomatisch und natürlich auf Deutsch, so dass der Text wirkt, als wäre er ursprünglich auf Deutsch verfasst worden.
-
-Kein Plagiat auf Satzebene
-   - Aussage gleich lassen, aber Satzbau und Wortwahl variieren.
-   - Nutze typische Formulierungen aus der deutschen Cloud‑/DevOps‑/Data‑Engineering‑Dokumentation (z. B. „richten Sie … ein“, „stellen Sie sicher, dass …“, „führen Sie folgenden Befehl aus“).
-
-Ausgabe
-   - Gib nur den übersetzten Text zurück, im selben Markdown-Layout.
-   - Keine zusätzlichen Kommentare, Erklärungen oder Metatexte.
-
-Zu übersetzender Text:
-
-`markdown
-REQUIREMENTS
-
-To reproduce this project you will need:
-
- Google Cloud account
- Docker with docker-compose
- Git account
-
-> [!NOTE]  
->You can use either your local machine or a virtual machine on Google Cloud. The decision to opt for a local machine was made to reduce the costs associated with cloud usage. However, if you prefer to run it on a virtual machine, please refer to the video below:
-
-:moviecamera: GCP Cloud VM 
-Setting up the environment on cloud VM
-![](https://youtu.be/ae-CV2KfoN0&list=PL3MmuxUbchJed7dXYoJw8DoCuVHhGEQb&index=14)
-
-SETUP GOOGLE CLOUD ACCOUNT
-Initial Setup
-Create an account with your Google email ID 
-Setup your first project if you haven't already
-     eg. "truck-logistics", and note down the "Project ID" (we'll use this later when deploying infra with TF)
-Create a service account
-     Add a service account name and click create and continue.
-     Grant Viewer role to begin with.
-Create a service account key
-     Under 'Actions' click on the 3 dots and 'Manage Keys'
-     Click 'Add key' and 'Create new key', choose 'JSON' key type. It will download it to your local machine, move it to a safe directory.
-
-Setup for Access
+Acknowledgement to [DataTalksClub](https://datatalks.club/)! for mentoring us through the Data Engineering Zoom Camp over the last 10 weeks. It has been a privilege to take part in the Spring '24 Cohort, go and check them out!
  
-IAM Roles for Service account:
-    Go to the IAM section of IAM & Admin https://console.cloud.google.com/iam-admin/iam
-    Click the Edit principal icon for your service account.
-    Add these roles in addition to Viewer : Storage Admin + Storage Object Admin + BigQuery Admin
-   
-Enable these APIs for your project:
-    https://console.cloud.google.com/apis/library/iam.googleapis.com
-   * https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
-   
-Please ensure GOOGLEAPPLICATIONCREDENTIALS env-var is set.
-   `shell
-   export GOOGLEAPPLICATIONCREDENTIALS="<path/to/your/service-account-authkeys>.json"
+> "DataTalks.Club - the place to talk about data! We are a community of people who are passionate about data. Join us to talk about everything related to data, to learn more about applied machine learning with our free courses and materials, to discuss the engineering aspects of data science and analytics, to chat about career options and learn tips and tricks for the job interviews, to discover new things and have fun!
 
-   # Refresh token/session, and verify authentication
-   gcloud auth application-default login
-   `
+> Our weekly events include:
 
-REPRODUCING THE PROJECT
-CLONE THE REPO
+> 👨🏼‍💻 Free courses and weekly study groups where you can start practicing within a friendly community of learners
 
-`bash
-git clone https://github.com/dieegogutierrez/Data-Engineering-Capstone-Project.git
-`
+> 🔧 Workshops where you can get hands-on tutorials about technical topics
 
-UPDATE WITH YOUR INFORMATION
+> ⚙️ Open-Source Spotlight, where you can discover open-source tools with a short demo video
 
-`bash
-cd mage-zoomcamp
-`
-Rename file dev.env to simply .env.
-Update the variables with your information, specially 'LOCALPATHSERVICEACCOUNT' with the path to your local service account file and 'TFVAR' with your cloud project information.
+> 🎙 Live Podcasts with practitioners where they share their experience (and the recordings too)
 
-RUN THE SCRIPT
+> 📺 Webinars with slides, where we discuss technical aspects of data science"
 
-`bash
-./start.sh
-`
-The script will run Terraform in Docker and create the infrastructure in Google Cloud, specifically, a storage bucket and a BigQuery dataset.
-Then, it will run the orchestrator MAGE, which will load local data, transform it, and export it to Google Cloud. Afterward, DBT will create models that will build a final table to be used on a dashboard.
-Access the orchestrator at http://localhost:6789/ and run the pipeline by yourself.
-After completion, it will create a table named 'tripsgrossrevenue' in BigQuery, which can be used in Looker Studio to build a dashboard.
-`
-``
+[Data Talks Club](https://www.linkedin.com/company/datatalks-club/)
