@@ -22,8 +22,6 @@
 * [Weitere Ideen & nächste Schritte](#weitere-ideen--nächste-schritte)
 * [Danksagungen & Quellen](#danksagungen--quellen)
 
-> **HINWEIS:** Um die Projektübersicht zu überspringen und direkt zur Einrichtung zu gelangen, klicke hier.
-
 ---
 
 ## Problemstellung
