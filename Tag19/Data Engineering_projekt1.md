@@ -1,125 +1,136 @@
-Datenpipeline für Lkw‑Logistik
-Data Engineering Zoom Camp | Kohorte 2024 | Capstone‑Projekt
 
-Autor: Koffitse Aboudou
+---
 
-> WICHTIG: Um die Projektübersicht zu überspringen und direkt zum Setup zu gelangen, klicken Sie hier.
+# Truck-Logistik-Datenpipeline
 
-<img src="static/assets/trucks.jpeg" alt="Trucks" height="300" width="600">
+**Data Engineering**
 
-Inhaltsverzeichnis
- Problemstellung
- Werkzeuge & Technologien
- Architekturdiagramm
- Datenquellen & Schema
- Orchestrierung mit Mage
- Dashboard & Visualisierung
- Weiterführende Ideen & Nächste Schritte
- Danksagung & Credits
+**Autor:** Koffitse Aboudou
 
-> HINWEIS: Um die Projektübersicht zu überspringen und direkt zum Setup zu gelangen, klicken Sie hier.
 
-Problemstellung
 
-Die Notwendigkeit, für ein Lkw‑Logistikunternehmen eine Datenpipeline und ein Dashboard aufzubauen, ergibt sich aus dem Anspruch, Informationen zu Transportvorgängen – insbesondere umsatzrelevante Daten je Kunde – effizient zu erfassen, zu verarbeiten und bereitzustellen. Durch die Implementierung einer durchgängigen Pipeline, die Datenerfassung, ‑aufbereitung, ‑analyse und Visualisierung umfasst, und in Kombination mit einem benutzerfreundlichen Dashboard für das Management erhält das Unternehmen belastbare Einblicke in Umsatzentwicklung, Kostenstrukturen und die operative Performance.
+---
 
-Dieses Projekt implementiert eine vollständige ETL‑Pipeline (Extract, Transform, Load), mit der die Datenverarbeitung eines Lkw‑Logistikunternehmens systematisch automatisiert und verbessert wird. Zur Umsetzung werden mehrere leistungsfähige Technologien und Tools eingesetzt:
+## Inhaltsverzeichnis
 
-• Infrastrukturbereitstellung mit Terraform: Terraform erstellt die erforderliche Cloud‑Infrastruktur auf Google Cloud Storage und BigQuery und sorgt so für eine skalierbare und robuste Umgebung für Verarbeitung und Speicherung der Daten.
+* [Problemstellung](#problemstellung)
+* [Tools & Technologien](#tools--technologien)
+* [Architekturdiagramm](#architekturdiagramm)
+* [Datenquellen & Schema](#datenquellen--schema)
+* [Mage-Orchestrierung](#mage-orchestrierung)
+* [Dashboard & Visualisierung](#dashboard--visualisierung)
+* [Weitere Ideen & nächste Schritte](#weitere-ideen--nächste-schritte)
+* [Danksagungen & Quellen](#danksagungen--quellen)
 
-• Datenorchestrierung mit Mage: Mage, ein moderner Orchestrator für Datenworkflows, automatisiert den ETL‑Prozess. Er lädt eine CSV‑Datei vom lokalen System, konvertiert sie in ein Parquet‑Format und schreibt die Daten anschließend nach Google Cloud Storage und BigQuery. Der gesamte Ablauf ist containerisiert und läuft in Docker, was Konsistenz und einfache Bereitstellung sicherstellt.
+> **HINWEIS:** Um die Projektübersicht zu überspringen und direkt zur Einrichtung zu gelangen, klicke hier.
 
-• Analytik mit dbt: Mit dbt (Data Build Tool) werden analytische Transformationen auf den in BigQuery abgelegten Daten ausgeführt. Dadurch entstehen aussagekräftige Datenmodelle und Transformationen, die tiefere Einblicke in die Logistikprozesse ermöglichen.
+---
 
-• Visualisierung mit Looker Studio: Abschließend wird Looker Studio genutzt, um interaktive und intuitiv bedienbare Dashboards zu erstellen. Diese Dashboards stellen zentrale Kennzahlen und Auswertungen bereit, sodass das Management Entscheidungen auf Basis nahezu in Echtzeit verfügbarer Daten treffen kann.
+## Problemstellung
 
-Werkzeuge & Technologien
- Containerisierung: Docker
- Workflow‑Orchestrierung: Mage
- Datentransformationen: DBT DataBuildTools
- Data Lake: Google Cloud Storage
- Data Warehouse: Google BigQuery
- Infrastructure as Code (IaC): Terraform
- Visualisierung: Looker Studio
+Die Notwendigkeit zur Entwicklung einer Pipeline und eines Dashboards für ein Logistikunternehmen im Lkw-Bereich ergibt sich aus der Anforderung, kritische Informationen zu Transportaktivitäten effizient zu erfassen, zu verarbeiten und bereitzustellen – insbesondere Umsatzdaten pro Kunde. Durch den Aufbau einer umfassenden Pipeline, die die Phasen Datenerfassung, Vorverarbeitung, Analyse und Visualisierung umfasst, sowie eines benutzerfreundlichen Dashboard-Interfaces für Führungskräfte und das obere Management, kann das Unternehmen präzise Einblicke in Umsatzgenerierung, Kostenanalyse und die Gesamtleistung der operativen Prozesse gewinnen.
 
-Architekturdiagramm
+Dieses Projekt ist eine vollständige **ETL-Pipeline (Extract, Transform, Load)**, die darauf ausgelegt ist, die Datenverarbeitungsfähigkeiten eines Lkw-Logistikunternehmens zu optimieren und zu erweitern.
 
-<img src="static/assets/dataarchitecture.drawio.svg" alt="Data Architecture" height="300" width="600">
+---
 
-Datenquellen & Schema
+## Tools & Technologien
 
-Die Projektidee basiert auf einem Lkw‑Flottenunternehmen, dessen Fahrer für unterschiedliche Auftraggeber tätig sind. Um keine vertraulichen Informationen zu verwenden, wurden die Daten synthetisch erzeugt. Die in diesem Projekt verwendeten simulierten Datensätze befinden sich in den Verzeichnissen data und seed. Vergleichbare Daten können mit dem Python‑Skript datagenerator.py generiert werden.
+* **Containerisierung:** Docker
+* **Workflow-Orchestrierung:** Mage
+* **Datentransformationen:** dbt (Data Build Tool)
+* **Data Lake:** Google Cloud Storage
+* **Data Warehouse:** Google BigQuery
+* **Infrastructure as Code (IaC):** Terraform
+* **Visualisierung:** Looker Studio
 
-Im Wesentlichen kommen zwei CSV‑Dateien zum Einsatz:  
-eine im lokalen Ordner data, der wöchentlich mit den Fahrten der vergangenen Woche aktualisiert wird, sowie eine statische Tabelle mit den Kundentarifen für die jeweiligen Fahrtarten.
+---
 
-tripdata:  
-   Diese CSV enthält Fahrtdaten für die Lkw‑Logistik und umfasst folgende Spalten:
+## Architekturdiagramm
 
-    date: Datum des Datensatzes  
-    driver: Name der Fahrerin bzw. des Fahrers  
-    customer: Name des Kunden  
-    hours: Anzahl der Stunden für die Fahrt  
-    km: Zurückgelegte Strecke in Kilometern  
+<img width="949" height="664" alt="image" src="https://github.com/user-attachments/assets/8e7824d8-1f73-4fc6-b6a2-046c1705b927" />
 
-customerrates:  
-   Diese CSV beschreibt unterschiedliche Tarife pro Kunde und enthält folgende Spalten:
+---
 
-    customer: Name des Kunden  
-    hourcity: Stundensatz für Fahrten im Stadtgebiet  
-    hourregular: Stundensatz für reguläre Fahrten  
-    hourhy: Stundensatz für Autobahnfahrten  
-    fsccity: Treibstoffzuschlag für Stadtfahrten  
-    fscregular: Treibstoffzuschlag für reguläre Fahrten  
-    fschy: Treibstoffzuschlag für Autobahnfahrten  
-    hymileage: Kilometerpauschale für Autobahnstrecken  
+## Datenquellen & Schema
 
-Orchestrierung mit Mage
+Das Projekt wurde von einem Lkw-Flottenunternehmen inspiriert, bei dem Fahrer für unterschiedliche Unternehmen tätig sind. Um private Daten zu vermeiden, wurden die Daten simuliert. Die simulierten Daten befinden sich in den Verzeichnissen `data` und `seed`. Zur Generierung ähnlicher Daten kann das Python-Skript `datagenerator.py` ausgeführt werden.
+
+Es gibt zwei zentrale CSV-Dateien:
+
+1. Eine Datei im lokalen Ordner `data`, die wöchentlich aktualisiert wird.
+2. Eine statische Tabelle mit Kundentarifen für verschiedene Fahrtarten.
+
+### tripdata
+
+Diese CSV-Datei enthält Fahrtdaten der Lkw-Logistik:
+
+* **date:** Datum des Datensatzes
+* **driver:** Name des Fahrers
+* **customer:** Name des Kunden
+* **hours:** Anzahl der Stunden für die Fahrt
+* **km:** Zurückgelegte Strecke in Kilometern
+
+### customerrates
+
+Diese CSV-Datei enthält Kundentarife:
+
+* **customer:** Name des Kunden
+* **hourcity:** Stundensatz für Stadtfahrten
+* **hourregular:** Stundensatz für reguläre Fahrten
+* **hourhy:** Stundensatz für Autobahnfahrten
+* **fsccity:** Kraftstoffzuschlagssatz für Stadtfahrten
+* **fscregular:** Kraftstoffzuschlagssatz für reguläre Fahrten
+* **fsch y:** Kraftstoffzuschlagssatz für Autobahnfahrten
+* **hymileage:** Kilometerpreis für Autobahnfahrten
+
+---
+
+## Mage-Orchestrierung
 
 <img src="static/assets/pipeline.png" alt="Pipeline" height="600" width="300">
 
-Mage arbeitet mit modularen Code‑Blöcken; in dieser Pipeline kommen Python‑, SQL‑ und dbt‑Blöcke in der folgenden Reihenfolge zum Einsatz:
+Mage verwendet Python-, SQL- und dbt-Blöcke in folgender Reihenfolge:
 
-Laden der CSV‑Datei aus dem lokalen Verzeichnis.  
-Durchführung der Transformationen und Erzeugen einer Parquet‑Datei.  
-Export der Parquet‑Datei nach Google Cloud Storage.  
-Anlegen einer External Table in BigQuery auf Basis der Parquet‑Datei im Google‑Cloud‑Storage‑Bucket.  
-Installation aller dbt‑Abhängigkeiten mittels dbt deps.  
-Einspielen der Datei customerrates als Seed in das dbt‑Projekt.  
-Erzeugung sämtlicher dbt‑Modelle:
-   - Aufbau von Staging‑Modellen für beide Dateien, inklusive zusätzlicher Spalten wie tripid und triptype für tripdata.  
-   - Aufbau eines Core‑Modells durch Join beider Staging‑Modelle und Berechnung der Umsätze gemäß der kundenspezifischen Tariflogik.
+1. CSV-Datei aus dem lokalen Verzeichnis laden
+2. Transformationen durchführen und eine Parquet-Datei erstellen
+3. Parquet-Datei in Google Cloud Storage exportieren
+4. Externe Tabelle in BigQuery auf Basis der Parquet-Datei erstellen
+5. dbt-Pakete mit `dbt deps` installieren
+6. `customerrates` in das dbt-Projekt seeden
+7. dbt-Modelle erstellen
 
-Dashboard & Visualisierung
+   * Staging-Modelle mit zusätzlichen Spalten (`tripid`, `triptype`)
+   * Core-Modell durch Join beider Staging-Modelle und Umsatzberechnung
 
-Auf Basis von Google Looker Studio wurde ein Dashboard entwickelt, das Ereignisse in der Lkw‑Logistik visualisiert. Durch die Nutzung des nativen Visualisierungstools direkt aus BigQuery heraus profitiert das Dashboard von hoher Performance und geringer Latenz. Die enge Integration von Looker und BigQuery ermöglicht effiziente Datenabfragen und ‑verarbeitung und führt zu schnelleren Insights sowie einer flüssigen Nutzererfahrung.
+---
 
-Dashboard‑Link: HIER
+## Dashboard & Visualisierung
+
+Ein Dashboard wurde mit **Google Looker Studio** entwickelt, um Ereignisse in der Lkw-Logistik zu visualisieren. Durch die direkte Integration mit BigQuery profitiert das Dashboard von geringer Latenz und hoher Performance.
+
+**Dashboard-Link:** HIER
 
 <img src="static/assets/dashboard.png" alt="Chart1" height="300" width="600">
 
-Weiterführende Ideen & Nächste Schritte
-• Einsatz eines größeren Datenvolumens  
-• Aufteilung der customer_rates‑Dateien nach Jahr  
-• Bei umfangreicheren Datenmengen Einsatz zusätzlicher Tools wie z. B. dlt  
-• Nutzung von Partitionierung und Clustering  
+---
 
-Danksagung & Credits
+## Weitere Ideen & nächste Schritte
 
-Besonderer Dank gilt DataTalksClub für die Begleitung im Data Engineering Zoom Camp der letzten zehn Wochen. Es war ein Privileg, Teil der Spring‑’24‑Kohorte zu sein – unbedingt vorbeischauen!
+* Größeren Datensatz verwenden
+* `customer_rates`-Dateien nach Jahr trennen
+* Mit mehr Daten Tools wie **dlt** einsetzen
+* Partitionierung und Clustering implementieren
 
-> „DataTalks.Club – the place to talk about data! We are a community of people who are passionate about data. Join us to talk about everything related to data, to learn more about applied machine learning with our free courses and materials, to discuss the engineering aspects of data science and analytics, to chat about career options and learn tips and tricks for the job interviews, to discover new things and have fun!
->
-> Our weekly events include:
->
-> 👨🏼‍💻 Free courses and weekly study groups where you can start practicing within a friendly community of learners
->
-> 🔧 Workshops where you can get hands-on tutorials about technical topics
->
-> ⚙️ Open-Source Spotlight, where you can discover open-source tools with a short demo video
->
-> 🎙 Live Podcasts with practitioners where they share their experience (and the recordings too)
->
-> 📺 Webinars with slides, where we discuss technical aspects of data science“
+---
 
-Data Talks Club
+## Danksagungen & Quellen
+
+Dank an **DataTalksClub!** für das Mentoring während des Data Engineering Zoom Camps.
+
+> „DataTalks.Club – der Ort, um über Daten zu sprechen! Wir sind eine Community von Menschen mit Leidenschaft für Daten …“
+
+---
+
+---
+
